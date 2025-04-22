@@ -459,3 +459,5 @@ D:\DACS\QuanLyTruyenThong_TuVan\QuanLyTruyenThong_TuVan\QuanLyTruyenThong_TuVan\
 D:\DACS\QuanLyTruyenThong_TuVan\QuanLyTruyenThong_TuVan\QuanLyTruyenThong_TuVan\obj\Debug\net9.0\QuanLyTruyenThong_TuVan.pdb
 D:\DACS\QuanLyTruyenThong_TuVan\QuanLyTruyenThong_TuVan\QuanLyTruyenThong_TuVan\obj\Debug\net9.0\QuanLyTruyenThong_TuVan.genruntimeconfig.cache
 D:\DACS\QuanLyTruyenThong_TuVan\QuanLyTruyenThong_TuVan\QuanLyTruyenThong_TuVan\obj\Debug\net9.0\ref\QuanLyTruyenThong_TuVan.dll
+D:\DACS\QuanLyTruyenThong_TuVan\QuanLyTruyenThong_TuVan\QuanLyTruyenThong_TuVan\bin\Debug\net9.0\appsettings.Local.json
+D:\DACS\QuanLyTruyenThong_TuVan\QuanLyTruyenThong_TuVan\QuanLyTruyenThong_TuVan\obj\Debug\net9.0\QuanLyTruyenThong_TuVan.sourcelink.json
