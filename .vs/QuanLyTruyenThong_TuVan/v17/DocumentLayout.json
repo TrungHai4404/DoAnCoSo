@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|d:\\dacs\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|solutionrelative:quanlytruyenthong_tuvan\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|d:\\dacs\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|solutionrelative:quanlytruyenthong_tuvan\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|d:\\dacs\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\appsettings.local.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|solutionrelative:quanlytruyenthong_tuvan\\appsettings.local.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
@@ -14,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,7 +34,33 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\Program.cs",
+              "RelativeDocumentMoniker": "QuanLyTruyenThong_TuVan\\Program.cs",
+              "ToolTip": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\Program.cs",
+              "RelativeToolTip": "QuanLyTruyenThong_TuVan\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T11:48:51.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\appsettings.json",
+              "RelativeDocumentMoniker": "QuanLyTruyenThong_TuVan\\appsettings.json",
+              "ToolTip": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\appsettings.json",
+              "RelativeToolTip": "QuanLyTruyenThong_TuVan\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-22T11:44:31.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "appsettings.Local.json",
               "DocumentMoniker": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\appsettings.Local.json",
               "RelativeDocumentMoniker": "QuanLyTruyenThong_TuVan\\appsettings.Local.json",
