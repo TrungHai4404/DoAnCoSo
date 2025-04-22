@@ -1,7 +1,24 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|d:\\dacs\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\appsettings.local.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|solutionrelative:quanlytruyenthong_tuvan\\appsettings.local.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|d:\\dacs\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|solutionrelative:quanlytruyenthong_tuvan\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|d:\\dacs\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|solutionrelative:quanlytruyenthong_tuvan\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|d:\\dacs\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|solutionrelative:quanlytruyenthong_tuvan\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +26,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\appsettings.json",
+              "RelativeDocumentMoniker": "QuanLyTruyenThong_TuVan\\appsettings.json",
+              "ToolTip": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\appsettings.json",
+              "RelativeToolTip": "QuanLyTruyenThong_TuVan\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-22T11:00:35.536Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
@@ -18,6 +48,45 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.Local.json",
+              "DocumentMoniker": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\appsettings.Local.json",
+              "RelativeDocumentMoniker": "QuanLyTruyenThong_TuVan\\appsettings.Local.json",
+              "ToolTip": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\appsettings.Local.json",
+              "RelativeToolTip": "QuanLyTruyenThong_TuVan\\appsettings.Local.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-22T11:00:38.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\Program.cs",
+              "RelativeDocumentMoniker": "QuanLyTruyenThong_TuVan\\Program.cs",
+              "ToolTip": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\Program.cs",
+              "RelativeToolTip": "QuanLyTruyenThong_TuVan\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T11:00:09.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ScaffoldingReadMe.txt",
+              "DocumentMoniker": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\ScaffoldingReadMe.txt",
+              "RelativeDocumentMoniker": "QuanLyTruyenThong_TuVan\\ScaffoldingReadMe.txt",
+              "ToolTip": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\ScaffoldingReadMe.txt",
+              "RelativeToolTip": "QuanLyTruyenThong_TuVan\\ScaffoldingReadMe.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-04-22T11:00:08.596Z",
+              "EditorCaption": ""
             }
           ]
         },

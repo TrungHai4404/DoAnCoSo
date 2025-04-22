@@ -1,0 +1,9 @@
+
+bin/
+obj/
+out/
+.idea/
+.vscode/
+*.sln.iml
+
+appsettings.Local.json

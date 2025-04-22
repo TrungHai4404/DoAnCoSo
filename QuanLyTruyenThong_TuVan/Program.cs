@@ -6,6 +6,14 @@ using QuanLyTruyenThong_TuVan.Repositories.EFRepository;
 using QuanLyTruyenThong_TuVan.Repositories.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Configuration
+    .SetBasePath(Directory.GetCurrentDirectory())
+    .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+    .AddJsonFile("appsettings.Local.json", optional: true, reloadOnChange: true) // 👈 Thêm dòng này
+    .AddEnvironmentVariables();
+
+
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddIdentity<ApplicationResident, IdentityRole>()
