@@ -29,6 +29,7 @@ builder.Services.AddScoped<ICommentRepository, CommentRepository>();
 builder.Services.AddScoped<INotificationRepository, NotificationRepository>();
 
 var app = builder.Build();
+app.UseStaticFiles(); // Sử dụng file tĩnh
 //Seed dữ liệu khi khởi động ứng dụng
 using (var scope = app.Services.CreateScope())
 {
@@ -61,9 +62,12 @@ app.UseAuthorization();
 app.MapStaticAssets();
 app.MapRazorPages();
 app.MapControllerRoute(
+    name: "Admin",
+    pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+
+app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}")
-    .WithStaticAssets();
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 
 app.Run();
