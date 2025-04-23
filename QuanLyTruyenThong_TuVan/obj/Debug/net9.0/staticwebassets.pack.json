@@ -5,6 +5,702 @@
       "PackagePath": "staticwebassets\\QuanLyTruyenThong_TuVan.cnxdefc39e.bundle.scp.css"
     },
     {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\adminlte.css",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\adminlte.css"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\adminlte.css.map",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\adminlte.css.map"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\adminlte.min.css",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\adminlte.min.css"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\adminlte.min.css.map",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\adminlte.min.css.map"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\alt\\adminlte.components.css",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\alt\\adminlte.components.css"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\alt\\adminlte.components.css.map",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\alt\\adminlte.components.css.map"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\alt\\adminlte.components.min.css",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\alt\\adminlte.components.min.css"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\alt\\adminlte.components.min.css.map",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\alt\\adminlte.components.min.css.map"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\alt\\adminlte.core.css",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\alt\\adminlte.core.css"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\alt\\adminlte.core.css.map",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\alt\\adminlte.core.css.map"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\alt\\adminlte.core.min.css",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\alt\\adminlte.core.min.css"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\alt\\adminlte.core.min.css.map",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\alt\\adminlte.core.min.css.map"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\alt\\adminlte.extra-components.css",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\alt\\adminlte.extra-components.css"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\alt\\adminlte.extra-components.css.map",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\alt\\adminlte.extra-components.css.map"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\alt\\adminlte.extra-components.min.css",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\alt\\adminlte.extra-components.min.css"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\alt\\adminlte.extra-components.min.css.map",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\alt\\adminlte.extra-components.min.css.map"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\alt\\adminlte.light.css",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\alt\\adminlte.light.css"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\alt\\adminlte.light.css.map",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\alt\\adminlte.light.css.map"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\alt\\adminlte.light.min.css",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\alt\\adminlte.light.min.css"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\alt\\adminlte.light.min.css.map",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\alt\\adminlte.light.min.css.map"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\alt\\adminlte.pages.css",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\alt\\adminlte.pages.css"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\alt\\adminlte.pages.css.map",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\alt\\adminlte.pages.css.map"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\alt\\adminlte.pages.min.css",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\alt\\adminlte.pages.min.css"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\alt\\adminlte.pages.min.css.map",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\alt\\adminlte.pages.min.css.map"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\alt\\adminlte.plugins.css",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\alt\\adminlte.plugins.css"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\alt\\adminlte.plugins.css.map",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\alt\\adminlte.plugins.css.map"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\alt\\adminlte.plugins.min.css",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\alt\\adminlte.plugins.min.css"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\alt\\adminlte.plugins.min.css.map",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\alt\\adminlte.plugins.min.css.map"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\img\\AdminLTELogo.png",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\img\\AdminLTELogo.png"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\img\\boxed-bg.jpg",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\img\\boxed-bg.jpg"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\img\\boxed-bg.png",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\img\\boxed-bg.png"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\img\\credit\\american-express.png",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\img\\credit\\american-express.png"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\img\\credit\\cirrus.png",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\img\\credit\\cirrus.png"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\img\\credit\\mastercard.png",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\img\\credit\\mastercard.png"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\img\\credit\\paypal.png",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\img\\credit\\paypal.png"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\img\\credit\\paypal2.png",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\img\\credit\\paypal2.png"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\img\\credit\\visa.png",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\img\\credit\\visa.png"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\js\\.eslintrc.json",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\js\\.eslintrc.json"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\js\\adminlte.js",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\js\\adminlte.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\js\\adminlte.js.map",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\js\\adminlte.js.map"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\js\\adminlte.min.js",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\js\\adminlte.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\js\\adminlte.min.js.map",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\js\\adminlte.min.js.map"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\js\\demo.js",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\js\\demo.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\js\\pages\\dashboard.js",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\js\\pages\\dashboard.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\js\\pages\\dashboard2.js",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\js\\pages\\dashboard2.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\js\\pages\\dashboard3.js",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\js\\pages\\dashboard3.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\bootstrap\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\bootstrap\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\bootstrap\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\bootstrap\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\bootstrap\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\bootstrap\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\bootstrap\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\bootstrap\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\bootstrap\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\bootstrap\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\bootstrap\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\bootstrap\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\bootstrap\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\bootstrap\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\bootstrap\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\bootstrap\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\css\\all.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\css\\all.css"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\css\\all.min.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\css\\all.min.css"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\css\\brands.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\css\\brands.css"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\css\\brands.min.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\css\\brands.min.css"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\css\\fontawesome.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\css\\fontawesome.css"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\css\\fontawesome.min.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\css\\fontawesome.min.css"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\css\\regular.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\css\\regular.css"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\css\\regular.min.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\css\\regular.min.css"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\css\\solid.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\css\\solid.css"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\css\\solid.min.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\css\\solid.min.css"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\css\\svg-with-js.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\css\\svg-with-js.css"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\css\\svg-with-js.min.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\css\\svg-with-js.min.css"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\css\\v4-shims.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\css\\v4-shims.css"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\css\\v4-shims.min.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\css\\v4-shims.min.css"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.eot"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.svg",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.svg"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.woff"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.eot"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.svg",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.svg"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.woff"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.eot"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.svg",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.svg"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.woff"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales-all.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales-all.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales-all.min.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales-all.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\af.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\af.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\ar-dz.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\ar-dz.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\ar-kw.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\ar-kw.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\ar-ly.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\ar-ly.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\ar-ma.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\ar-ma.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\ar-sa.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\ar-sa.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\ar-tn.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\ar-tn.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\ar.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\ar.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\az.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\az.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\bg.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\bg.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\bn.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\bn.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\bs.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\bs.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\ca.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\ca.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\cs.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\cs.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\cy.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\cy.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\da.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\da.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\de-at.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\de-at.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\de.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\de.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\el.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\el.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\en-au.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\en-au.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\en-gb.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\en-gb.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\en-nz.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\en-nz.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\eo.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\eo.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\es-us.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\es-us.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\es.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\es.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\et.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\et.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\eu.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\eu.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\fa.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\fa.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\fi.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\fi.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\fr-ca.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\fr-ca.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\fr-ch.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\fr-ch.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\fr.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\fr.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\gl.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\gl.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\he.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\he.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\hi.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\hi.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\hr.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\hr.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\hu.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\hu.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\hy-am.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\hy-am.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\id.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\id.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\is.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\is.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\it.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\it.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\ja.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\ja.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\ka.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\ka.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\kk.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\kk.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\km.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\km.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\ko.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\ko.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\ku.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\ku.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\lb.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\lb.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\lt.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\lt.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\lv.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\lv.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\mk.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\mk.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\ms.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\ms.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\nb.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\nb.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\ne.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\ne.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\nl.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\nl.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\nn.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\nn.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\pl.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\pl.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\pt-br.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\pt-br.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\pt.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\pt.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\ro.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\ro.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\ru.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\ru.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\si-lk.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\si-lk.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\sk.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\sk.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\sl.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\sl.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\sm.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\sm.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\sq.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\sq.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\sr-cyrl.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\sr-cyrl.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\sr.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\sr.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\sv.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\sv.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\ta-in.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\ta-in.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\th.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\th.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\tr.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\tr.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\ug.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\ug.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\uk.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\uk.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\uz.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\uz.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\vi.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\vi.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\zh-cn.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\zh-cn.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\zh-tw.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\zh-tw.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\main.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\main.css"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\main.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\main.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\main.min.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\main.min.css"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\main.min.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\main.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\jquery\\jquery.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\jquery\\jquery.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\jquery\\jquery.min.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\jquery\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\jquery\\jquery.min.map",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\jquery\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\jquery\\jquery.slim.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\jquery\\jquery.slim.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\jquery\\jquery.slim.min.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\jquery\\jquery.slim.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\jquery\\jquery.slim.min.map",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\jquery\\jquery.slim.min.map"
+    },
+    {
       "Id": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
