@@ -1,0 +1,44 @@
+﻿@model IEnumerable<Vote>
+
+@{
+    ViewData["Title"] = "Danh sách bình chọn";
+    Layout = "_LayoutAdmin";
+}
+
+<section class="content">
+    <div class="container-fluid">
+        <div class="card">
+            <a asp-action="Create" class="btn btn-primary mb-3">Tạo biểu quyết mới</a>
+            <div class="card-header"><h3 class="card-title">Danh sách bình chọn</h3></div>
+            <div class="card-body">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Tiêu đề</th>
+                            <th>Bắt đầu</th>
+                            <th>Kết thúc</th>
+                            <th>Trạng thái</th>
+                            <th>Hành động</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var vote in Model)
+                        {
+                            <tr>
+                                <td>@vote.Title</td>
+                                <td>@vote.StartDate.ToShortDateString()</td>
+                                <td>@vote.EndDate.ToShortDateString()</td>
+                                <td>@vote.Status</td>
+                                <td>
+                                    <a class="btn btn-sm btn-info" asp-action="Detail" asp-route-id="@vote.Id">Chi tiết</a>
+                                    <a class="btn btn-sm btn-warning" asp-action="Edit" asp-route-id="@vote.Id">Sửa</a>
+                                    <a class="btn btn-sm btn-danger" asp-action="Delete" asp-route-id="@vote.Id">Xóa</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>

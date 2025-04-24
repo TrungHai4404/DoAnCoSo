@@ -1,0 +1,86 @@
+﻿@model  QuanLyTruyenThong_TuVan.Models.ViewModels.VoteViewModel;
+@{
+    ViewData["Title"] = "Tạo bình chọn mới";
+    Layout = "_LayoutAdmin";
+}
+
+<section class="content">
+    <div class="container-fluid">
+        <form asp-action="Create" method="post">
+            <div class="card card-primary">
+                <div class="card-header">
+                    <h3 class="card-title">Thông tin bình chọn</h3>
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label>Tiêu đề</label>
+                        <input asp-for="Title" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label>Mô tả</label>
+                        <textarea asp-for="Description" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Ngày bắt đầu</label>
+                        <input asp-for="StartDate" type="date" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label>Ngày kết thúc</label>
+                        <input asp-for="EndDate" type="date" class="form-control" />
+                    </div>
+
+                    <hr />
+                    <h5>Danh sách câu hỏi</h5>
+                    <div id="question-container">
+                        <div class="form-group">
+                            <label>Câu hỏi</label>
+                            <input name="Options[0].QuestionText" class="form-control" />
+                            <label>Loại</label>
+                            <select name="Options[0].QuestionType" class="form-control">
+                                <option value="SingleChoice">Chọn 1</option>
+                                <option value="MultipleChoice">Chọn nhiều</option>
+                                <option value="Text">Tự luận</option>
+                            </select>
+                            <label>Lựa chọn (mỗi dòng 1 lựa chọn)</label>
+                            <textarea name="Options[0].RawOptions" class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-secondary" onclick="addQuestion()">+ Thêm câu hỏi</button>
+                </div>
+                <div class="form-group">
+                    <label for="Status">Trạng thái</label>
+                    <select asp-for="Status" class="form-control" asp-items="Html.GetEnumSelectList<VoteStatus>()">
+                        <option value="">-- Chọn trạng thái --</option>
+                    </select>
+                </div>
+                <div class="card-footer">
+                    <button type="submit" class="btn btn-primary">Tạo bình chọn</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+@section Scripts {
+    <script>
+        let index = 1;
+        function addQuestion() {
+            const container = document.getElementById("question-container");
+            container.insertAdjacentHTML('beforeend', `
+                <div class="form-group mt-4">
+                    <label>Câu hỏi</label>
+                    <input name="Options[${index}].QuestionText" class="form-control" />
+                    <label>Loại</label>
+                    <select name="Options[${index}].QuestionType" class="form-control">
+                        <option value="SingleChoice">Chọn 1</option>
+                        <option value="MultipleChoice">Chọn nhiều</option>
+                        <option value="Text">Tự luận</option>
+                    </select>
+                    <label>Lựa chọn (mỗi dòng 1 lựa chọn)</label>
+                    <textarea name="Options[${index}].RawOptions" class="form-control"></textarea>
+                </div>
+            `);
+            index++;
+        }
+    </script>
+}

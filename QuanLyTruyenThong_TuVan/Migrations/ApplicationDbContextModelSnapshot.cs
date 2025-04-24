@@ -469,6 +469,115 @@ namespace QuanLyTruyenThong_TuVan.Migrations
                     b.ToTable("Responses");
                 });
 
+            modelBuilder.Entity("QuanLyTruyenThong_TuVan.Models.Vote", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("CreatedBy")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CreatedByUserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("EndDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("StartDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CreatedByUserId");
+
+                    b.ToTable("Votes");
+                });
+
+            modelBuilder.Entity("QuanLyTruyenThong_TuVan.Models.VoteOption", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("OptionsJson")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("QuestionText")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("QuestionType")
+                        .HasColumnType("int");
+
+                    b.Property<int>("VoteId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("VoteId");
+
+                    b.ToTable("VoteOptions");
+                });
+
+            modelBuilder.Entity("QuanLyTruyenThong_TuVan.Models.VoteResult", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Answer")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("ResidentId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ResidentId1")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime>("VoteAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("VoteId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("VoteOptionId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ResidentId1");
+
+                    b.HasIndex("VoteId");
+
+                    b.HasIndex("VoteOptionId");
+
+                    b.ToTable("VoteResults");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -573,9 +682,70 @@ namespace QuanLyTruyenThong_TuVan.Migrations
                     b.Navigation("Resident");
                 });
 
+            modelBuilder.Entity("QuanLyTruyenThong_TuVan.Models.Vote", b =>
+                {
+                    b.HasOne("QuanLyTruyenThong_TuVan.Models.ApplicationResident", "CreatedByUser")
+                        .WithMany()
+                        .HasForeignKey("CreatedByUserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("CreatedByUser");
+                });
+
+            modelBuilder.Entity("QuanLyTruyenThong_TuVan.Models.VoteOption", b =>
+                {
+                    b.HasOne("QuanLyTruyenThong_TuVan.Models.Vote", "Vote")
+                        .WithMany("VoteOptions")
+                        .HasForeignKey("VoteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Vote");
+                });
+
+            modelBuilder.Entity("QuanLyTruyenThong_TuVan.Models.VoteResult", b =>
+                {
+                    b.HasOne("QuanLyTruyenThong_TuVan.Models.ApplicationResident", "Resident")
+                        .WithMany()
+                        .HasForeignKey("ResidentId1")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("QuanLyTruyenThong_TuVan.Models.Vote", "Vote")
+                        .WithMany("VoteResults")
+                        .HasForeignKey("VoteId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("QuanLyTruyenThong_TuVan.Models.VoteOption", "VoteOption")
+                        .WithMany("VoteResults")
+                        .HasForeignKey("VoteOptionId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Resident");
+
+                    b.Navigation("Vote");
+
+                    b.Navigation("VoteOption");
+                });
+
             modelBuilder.Entity("QuanLyTruyenThong_TuVan.Models.Apartment", b =>
                 {
                     b.Navigation("Residents");
+                });
+
+            modelBuilder.Entity("QuanLyTruyenThong_TuVan.Models.Vote", b =>
+                {
+                    b.Navigation("VoteOptions");
+
+                    b.Navigation("VoteResults");
+                });
+
+            modelBuilder.Entity("QuanLyTruyenThong_TuVan.Models.VoteOption", b =>
+                {
+                    b.Navigation("VoteResults");
                 });
 #pragma warning restore 612, 618
         }

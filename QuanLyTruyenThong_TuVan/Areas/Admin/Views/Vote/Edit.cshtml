@@ -1,0 +1,124 @@
+﻿@model QuanLyTruyenThong_TuVan.Models.ViewModels.VoteViewModel;
+@{
+    ViewData["Title"] = "Chỉnh sửa biểu quyết";
+    Layout = "_LayoutAdmin";
+}
+
+<section class="content">
+    <div class="container-fluid">
+        <form asp-action="Edit" method="post">
+            <input type="hidden" asp-for="VoteId" />
+            <div class="card card-primary">
+                <div class="card-header">
+                    <h3 class="card-title">Thông tin bình chọn</h3>
+                </div>
+                <div class="card-body">
+                    <input type="hidden" name="DeletedOptionIds" id="DeletedOptionIds" value=""/>
+                    
+                    <div class="form-group">
+                        <label>Tiêu đề</label>
+                        <input asp-for="Title" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label>Mô tả</label>
+                        <textarea asp-for="Description" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Ngày bắt đầu</label>
+                        <input asp-for="StartDate" type="date" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label>Ngày kết thúc</label>
+                        <input asp-for="EndDate" type="date" class="form-control" />
+                    </div>
+
+                    <hr />
+                    <h5>Danh sách câu hỏi</h5>
+                    <div id="question-container">
+                        @for (int i = 0; i < Model.Options.Count; i++)
+                        {
+                            <div class="form-group border p-3 mb-3 rounded bg-light position-relative" id="question-${i}">
+                                <input type="hidden" name="Options[@i].Id" value="@Model.Options[i].Id" />
+
+                                <button type="button" class="btn btn-sm btn-danger position-absolute" style="top:0; right:0;" onclick="removeQuestion(this)">X</button>
+
+                                <label>Câu hỏi</label>
+                                <input name="Options[@i].QuestionText" class="form-control" value="@Model.Options[i].QuestionText" />
+
+                                <label>Loại</label>
+                                <select name="Options[@i].QuestionType" class="form-control">
+                                    <option value="SingleChoice" selected="@(Model.Options[i].QuestionType == QuestionType.SingleChoice)">Chọn 1</option>
+                                    <option value="MultipleChoice" selected="@(Model.Options[i].QuestionType == QuestionType.MultipleChoice)">Chọn nhiều</option>
+                                    <option value="Text" selected="@(Model.Options[i].QuestionType == QuestionType.Text)">Tự luận</option>
+                                </select>
+
+                                <label>Lựa chọn (mỗi dòng 1 lựa chọn)</label>
+                                <textarea name="Options[@i].RawOptions" class="form-control">@Model.Options[i].RawOptions</textarea>
+                            </div>
+                        }
+
+                    </div>
+                    <button type="button" class="btn btn-secondary" onclick="addQuestion()">+ Thêm câu hỏi</button>
+                    <div class="form-group">
+                        <label for="Status">Trạng thái</label>
+                        <select asp-for="Status" class="form-control" asp-items="Html.GetEnumSelectList<VoteStatus>()">
+                            <option value="">-- Chọn trạng thái --</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="card-footer">
+                    <button type="submit" class="btn btn-primary">Cập nhật</button>
+                    <a asp-action="Index" class="btn btn-secondary">Hủy</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+@section Scripts {
+    <script>
+        let index = @Model.Options.Count;
+        function addQuestion() {
+            const container = document.getElementById("question-container");
+            container.insertAdjacentHTML('beforeend', `
+                <div class="form-group border p-3 mb-3 rounded bg-light position-relative" id="question-${index}">
+                    <input type="hidden" name="Options[${index}].Id" value="" />
+
+                    <button type="button" class="btn btn-sm btn-danger position-absolute" style="top:0; right:0;" onclick="removeQuestion(this)">X</button>
+
+                    <label>Câu hỏi</label>
+                    <input name="Options[${index}].QuestionText" class="form-control" />
+
+                    <label>Loại</label>
+                    <select name="Options[${index}].QuestionType" class="form-control">
+                        <option value="SingleChoice">Chọn 1</option>
+                        <option value="MultipleChoice">Chọn nhiều</option>
+                        <option value="Text">Tự luận</option>
+                    </select>
+
+                    <label>Lựa chọn (mỗi dòng 1 lựa chọn)</label>
+                    <textarea name="Options[${index}].RawOptions" class="form-control"></textarea>
+                </div>
+            `);
+            index++;
+        }
+
+        function removeQuestion(btn) {
+            const question = btn.closest(".form-group");
+
+            const idInput = question.querySelector('input[name$=".Id"]');
+            const id = idInput?.value;
+            if (id) {
+                const deletedIds = document.getElementById("DeletedOptionIds");
+                let current = deletedIds.value ? deletedIds.value.split(',') : [];
+                current.push(id);
+                deletedIds.value = current.join(',');
+            }
+
+            question.remove();
+        }
+
+
+    </script>
+}

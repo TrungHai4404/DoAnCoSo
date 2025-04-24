@@ -1,0 +1,34 @@
+﻿@model QuanLyTruyenThong_TuVan.Models.ViewModels.VoteViewModel;
+@{
+    ViewData["Title"] = "Xóa bình chọn";
+    Layout = "_LayoutAdmin";
+}
+
+<div class="card">
+    <div class="card-header">
+        <h3 class="card-title">Xóa cuộc bỏ phiếu</h3>
+    </div>
+    <div class="card-body">
+        <h4>Bạn có chắc muốn xóa cuộc bỏ phiếu "@Model.Title"?</h4>
+        <dl class="row">
+            <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Title)</dt>
+            <dd class="col-sm-10">@Html.DisplayFor(model => model.Title)</dd>
+            <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Description)</dt>
+            <dd class="col-sm-10">@Html.DisplayFor(model => model.Description)</dd>
+            <dt class="col-sm-2">@Html.DisplayNameFor(model => model.StartDate)</dt>
+            <dd class="col-sm-10">@Html.DisplayFor(model => model.StartDate)</dd>
+            <dt class="col-sm-2">@Html.DisplayNameFor(model => model.EndDate)</dt>
+            <dd class="col-sm-10">@Html.DisplayFor(model => model.EndDate)</dd>
+            <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Status)</dt>
+            <dd class="col-sm-10">@Html.DisplayFor(model => model.Status)</dd>
+        </dl>
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+            <div class="form-group">
+                <button type="submit" class="btn btn-danger"><i class="fas fa-trash"></i> Xóa</button>
+                <a href="@Url.Action("Index")" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Quay lại</a>
+            </div>
+        }
+    </div>
+</div>
