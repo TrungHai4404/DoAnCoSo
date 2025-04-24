@@ -9,6 +9,8 @@ namespace QuanLyTruyenThong_TuVan.Models
         public string? Gender { get; set; }
         public DateTime? DateOfBirth { get; set; }
         public string? Address { get; set; }
-        
+
+        public int? ApartmentId { get; set; } // Khóa ngoại
+        public Apartment Apartment { get; set; } // Navigation property
     }
 }

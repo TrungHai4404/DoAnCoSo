@@ -1,0 +1,41 @@
+﻿@model QuanLyTruyenThong_TuVan.Models.ApplicationResident
+@{
+    ViewData["Title"] = "Xóa tài khoản cư dân";
+    Layout = "_LayoutAdmin";
+}
+
+<section class="content">
+    <div class="container-fluid">
+        <div class="card card-danger">
+            <div class="card-header">
+                <h3 class="card-title">Xác nhận xóa tài khoản cư dân</h3>
+            </div>
+
+            <div class="card-body">
+                <div class="alert alert-danger">
+                    <strong>Bạn có chắc chắn muốn xóa tài khoản sau không?</strong>
+                </div>
+
+                <dl class="row">
+                    <dt class="col-sm-3">Họ và tên</dt>
+                    <dd class="col-sm-9">@Model.FullName</dd>
+
+                    <dt class="col-sm-3">Email</dt>
+                    <dd class="col-sm-9">@Model.Email</dd>
+
+                    <dt class="col-sm-3">Giới tính</dt>
+                    <dd class="col-sm-9">@Model.Gender</dd>
+
+                    <dt class="col-sm-3">Căn hộ</dt>
+                    <dd class="col-sm-9">@Model.Apartment?.ApartmentCode</dd>
+                </dl>
+
+                <form asp-action="Delete">
+                    <input type="hidden" asp-for="Id" />
+                    <button type="submit" class="btn btn-danger">Xóa</button>
+                    <a asp-action="Index" class="btn btn-secondary">Hủy</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

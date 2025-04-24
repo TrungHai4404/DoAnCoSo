@@ -14,5 +14,7 @@ namespace QuanLyTruyenThong_TuVan.Data
         public DbSet<Response> Responses { get; set; }
         public DbSet<Notification> Notifications { get; set; }
         public DbSet<New> News { get; set; }
+
+       
     }
 }

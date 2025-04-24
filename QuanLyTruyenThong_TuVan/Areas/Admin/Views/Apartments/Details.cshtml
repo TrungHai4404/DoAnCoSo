@@ -1,0 +1,26 @@
+﻿@model QuanLyTruyenThong_TuVan.Models.Apartment
+@{
+    ViewData["Title"] = "Chi tiết căn hộ";
+    Layout = "_LayoutAdmin";
+}
+<div class="card">
+    <div class="card-header"><h3 class="card-title">Chi tiết căn hộ</h3></div>
+    <div class="card-body">
+        <dl class="row">
+            <dt class="col-sm-3">Mã căn hộ</dt>
+            <dd class="col-sm-9">@Model.ApartmentCode</dd>
+            <dt class="col-sm-3">Tầng</dt>
+            <dd class="col-sm-9">@Model.Floor</dd>
+            <dt class="col-sm-3">Số phòng</dt>
+            <dd class="col-sm-9">@Model.RoomNumber</dd>
+            <dt class="col-sm-3">Diện tích</dt>
+            <dd class="col-sm-9">@Model.Area</dd>
+            <dt class="col-sm-3">Địa chỉ</dt>
+            <dd class="col-sm-9">@Model.Address</dd>
+        </dl>
+    </div>
+    <div class="card-footer">
+        <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Sửa</a>
+        <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+    </div>
+</div>

@@ -178,18 +178,10 @@ namespace QuanLyTruyenThong_TuVan.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("ResidentId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("ResidentId1")
-                        .HasColumnType("nvarchar(450)");
-
                     b.Property<int>("RoomNumber")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("ResidentId1");
 
                     b.ToTable("Apartments");
                 });
@@ -204,6 +196,9 @@ namespace QuanLyTruyenThong_TuVan.Migrations
 
                     b.Property<string>("Address")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("ApartmentId")
+                        .HasColumnType("int");
 
                     b.Property<string>("Avatar")
                         .HasColumnType("nvarchar(max)");
@@ -263,6 +258,8 @@ namespace QuanLyTruyenThong_TuVan.Migrations
                         .HasColumnType("nvarchar(256)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("ApartmentId");
 
                     b.HasIndex("NormalizedEmail")
                         .HasDatabaseName("EmailIndex");
@@ -523,13 +520,13 @@ namespace QuanLyTruyenThong_TuVan.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("QuanLyTruyenThong_TuVan.Models.Apartment", b =>
+            modelBuilder.Entity("QuanLyTruyenThong_TuVan.Models.ApplicationResident", b =>
                 {
-                    b.HasOne("QuanLyTruyenThong_TuVan.Models.ApplicationResident", "Resident")
-                        .WithMany()
-                        .HasForeignKey("ResidentId1");
+                    b.HasOne("QuanLyTruyenThong_TuVan.Models.Apartment", "Apartment")
+                        .WithMany("Residents")
+                        .HasForeignKey("ApartmentId");
 
-                    b.Navigation("Resident");
+                    b.Navigation("Apartment");
                 });
 
             modelBuilder.Entity("QuanLyTruyenThong_TuVan.Models.Comment", b =>
@@ -574,6 +571,11 @@ namespace QuanLyTruyenThong_TuVan.Migrations
                     b.Navigation("Comment");
 
                     b.Navigation("Resident");
+                });
+
+            modelBuilder.Entity("QuanLyTruyenThong_TuVan.Models.Apartment", b =>
+                {
+                    b.Navigation("Residents");
                 });
 #pragma warning restore 612, 618
         }

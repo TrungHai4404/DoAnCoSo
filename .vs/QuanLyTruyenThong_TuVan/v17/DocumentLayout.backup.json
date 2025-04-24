@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|d:\\dacs\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\areas\\admin\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|solutionrelative:quanlytruyenthong_tuvan\\areas\\admin\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|d:\\dacs\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\areas\\admin\\controllers\\manageresidentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|solutionrelative:quanlytruyenthong_tuvan\\areas\\admin\\controllers\\manageresidentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|d:\\dacs\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\areas\\admin\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|solutionrelative:quanlytruyenthong_tuvan\\areas\\admin\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|d:\\dacs\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\areas\\admin\\views\\manageresident\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|solutionrelative:quanlytruyenthong_tuvan\\areas\\admin\\views\\manageresident\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|d:\\dacs\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\appsettings.local.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|solutionrelative:quanlytruyenthong_tuvan\\appsettings.local.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|d:\\dacs\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\areas\\admin\\views\\manageresident\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|solutionrelative:quanlytruyenthong_tuvan\\areas\\admin\\views\\manageresident\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|d:\\dacs\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\areas\\admin\\views\\manageresident\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|solutionrelative:quanlytruyenthong_tuvan\\areas\\admin\\views\\manageresident\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|d:\\dacs\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\areas\\admin\\views\\manageresident\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|solutionrelative:quanlytruyenthong_tuvan\\areas\\admin\\views\\manageresident\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -35,40 +43,66 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAcAAAAAAAAAA==",
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\ManageResident\\Delete.cshtml",
+              "RelativeDocumentMoniker": "QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\ManageResident\\Delete.cshtml",
+              "ToolTip": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\ManageResident\\Delete.cshtml",
+              "RelativeToolTip": "QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\ManageResident\\Delete.cshtml",
+              "ViewState": "AgIAABMAAAAAAAAAAAAIwBEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-23T08:32:53.993Z",
+              "WhenOpened": "2025-04-24T09:46:32.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\ManageResident\\Create.cshtml",
+              "RelativeDocumentMoniker": "QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\ManageResident\\Create.cshtml",
+              "ToolTip": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\ManageResident\\Create.cshtml",
+              "RelativeToolTip": "QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\ManageResident\\Create.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAEAAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-24T09:01:18.741Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "appsettings.Local.json",
-              "DocumentMoniker": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\appsettings.Local.json",
-              "RelativeDocumentMoniker": "QuanLyTruyenThong_TuVan\\appsettings.Local.json",
-              "ToolTip": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\appsettings.Local.json",
-              "RelativeToolTip": "QuanLyTruyenThong_TuVan\\appsettings.Local.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-23T08:30:32.473Z",
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\ManageResident\\Edit.cshtml",
+              "RelativeDocumentMoniker": "QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\ManageResident\\Edit.cshtml",
+              "ToolTip": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\ManageResident\\Edit.cshtml",
+              "RelativeToolTip": "QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\ManageResident\\Edit.cshtml",
+              "ViewState": "AgIAADcAAAAAAAAAAAD4vyIAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-24T08:57:51.801Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\ManageResident\\Index.cshtml",
+              "RelativeDocumentMoniker": "QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\ManageResident\\Index.cshtml",
+              "ToolTip": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\ManageResident\\Index.cshtml",
+              "RelativeToolTip": "QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\ManageResident\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-24T08:25:10.257Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "_LayoutAdmin.cshtml",
-              "DocumentMoniker": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\Shared\\_LayoutAdmin.cshtml",
-              "RelativeDocumentMoniker": "QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\Shared\\_LayoutAdmin.cshtml",
-              "ToolTip": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\Shared\\_LayoutAdmin.cshtml",
-              "RelativeToolTip": "QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\Shared\\_LayoutAdmin.cshtml",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAAE8AAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-22T16:48:02.306Z",
+              "Title": "ManageResidentController.cs",
+              "DocumentMoniker": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\Areas\\Admin\\Controllers\\ManageResidentController.cs",
+              "RelativeDocumentMoniker": "QuanLyTruyenThong_TuVan\\Areas\\Admin\\Controllers\\ManageResidentController.cs",
+              "ToolTip": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\Areas\\Admin\\Controllers\\ManageResidentController.cs",
+              "RelativeToolTip": "QuanLyTruyenThong_TuVan\\Areas\\Admin\\Controllers\\ManageResidentController.cs",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAwwJgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T08:00:08.098Z",
               "EditorCaption": ""
             }
           ]
