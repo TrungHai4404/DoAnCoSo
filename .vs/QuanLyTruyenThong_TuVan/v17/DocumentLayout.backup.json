@@ -3,40 +3,24 @@
   "WorkspaceRootPath": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|d:\\dacs\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\areas\\admin\\controllers\\votecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|solutionrelative:quanlytruyenthong_tuvan\\areas\\admin\\controllers\\votecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|d:\\dacs\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\models\\viewmodels\\voteviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|solutionrelative:quanlytruyenthong_tuvan\\models\\viewmodels\\voteviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|d:\\dacs\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\models\\voteoption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|solutionrelative:quanlytruyenthong_tuvan\\models\\voteoption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|d:\\dacs\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\areas\\admin\\views\\vote\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|solutionrelative:quanlytruyenthong_tuvan\\areas\\admin\\views\\vote\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|d:\\dacs\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\models\\vote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|solutionrelative:quanlytruyenthong_tuvan\\models\\vote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|d:\\dacs\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|solutionrelative:quanlytruyenthong_tuvan\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|d:\\dacs\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\areas\\admin\\views\\vote\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|solutionrelative:quanlytruyenthong_tuvan\\areas\\admin\\views\\vote\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|d:\\dacs\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\areas\\admin\\views\\vote\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|solutionrelative:quanlytruyenthong_tuvan\\areas\\admin\\views\\vote\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|d:\\dacs\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\areas\\admin\\views\\vote\\vote.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|solutionrelative:quanlytruyenthong_tuvan\\areas\\admin\\views\\vote\\vote.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|d:\\dacs\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\areas\\admin\\controllers\\votecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|solutionrelative:quanlytruyenthong_tuvan\\areas\\admin\\controllers\\votecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|d:\\dacs\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\areas\\admin\\views\\vote\\results.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|solutionrelative:quanlytruyenthong_tuvan\\areas\\admin\\views\\vote\\results.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|d:\\dacs\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\models\\voteresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|solutionrelative:quanlytruyenthong_tuvan\\models\\voteresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|d:\\dacs\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\models\\viewmodels\\voteresultstatisticsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|solutionrelative:quanlytruyenthong_tuvan\\models\\viewmodels\\voteresultstatisticsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,117 +42,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\Program.cs",
-              "RelativeDocumentMoniker": "QuanLyTruyenThong_TuVan\\Program.cs",
-              "ToolTip": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\Program.cs",
-              "RelativeToolTip": "QuanLyTruyenThong_TuVan\\Program.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T16:22:15.603Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\Vote\\Edit.cshtml",
-              "RelativeDocumentMoniker": "QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\Vote\\Edit.cshtml",
-              "ToolTip": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\Vote\\Edit.cshtml",
-              "RelativeToolTip": "QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\Vote\\Edit.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAkAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-24T14:14:00.582Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Vote.cshtml",
-              "DocumentMoniker": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\Vote\\Vote.cshtml",
-              "RelativeDocumentMoniker": "QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\Vote\\Vote.cshtml",
-              "ToolTip": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\Vote\\Vote.cshtml",
-              "RelativeToolTip": "QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\Vote\\Vote.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-24T13:26:43.201Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\Vote\\Index.cshtml",
               "RelativeDocumentMoniker": "QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\Vote\\Index.cshtml",
-              "ToolTip": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\Vote\\Index.cshtml",
-              "RelativeToolTip": "QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\Vote\\Index.cshtml",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAAAcAAAAZAAAAAAAAAA==",
+              "ToolTip": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\Vote\\Index.cshtml*",
+              "RelativeToolTip": "QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\Vote\\Index.cshtml*",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACkAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-24T13:07:03.261Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\Vote\\Create.cshtml",
-              "RelativeDocumentMoniker": "QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\Vote\\Create.cshtml",
-              "ToolTip": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\Vote\\Create.cshtml",
-              "RelativeToolTip": "QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\Vote\\Create.cshtml",
-              "ViewState": "AgIAADsAAAAAAAAAAAAswFYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-24T12:39:07.582Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Vote.cs",
-              "DocumentMoniker": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\Models\\Vote.cs",
-              "RelativeDocumentMoniker": "QuanLyTruyenThong_TuVan\\Models\\Vote.cs",
-              "ToolTip": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\Models\\Vote.cs",
-              "RelativeToolTip": "QuanLyTruyenThong_TuVan\\Models\\Vote.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T12:42:12.278Z",
+              "WhenOpened": "2025-04-25T09:58:20.499Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "VoteOption.cs",
-              "DocumentMoniker": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\Models\\VoteOption.cs",
-              "RelativeDocumentMoniker": "QuanLyTruyenThong_TuVan\\Models\\VoteOption.cs",
-              "ToolTip": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\Models\\VoteOption.cs",
-              "RelativeToolTip": "QuanLyTruyenThong_TuVan\\Models\\VoteOption.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAgwBIAAAAjAAAAAAAAAA==",
+              "Title": "Results.cshtml",
+              "DocumentMoniker": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\Vote\\Results.cshtml",
+              "RelativeDocumentMoniker": "QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\Vote\\Results.cshtml",
+              "ToolTip": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\Vote\\Results.cshtml",
+              "RelativeToolTip": "QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\Vote\\Results.cshtml",
+              "ViewState": "AgIAABMAAAAAAAAAAADgvx4AAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-25T09:57:48.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "VoteResultStatisticsViewModel.cs",
+              "DocumentMoniker": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\Models\\ViewModels\\VoteResultStatisticsViewModel.cs",
+              "RelativeDocumentMoniker": "QuanLyTruyenThong_TuVan\\Models\\ViewModels\\VoteResultStatisticsViewModel.cs",
+              "ToolTip": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\Models\\ViewModels\\VoteResultStatisticsViewModel.cs",
+              "RelativeToolTip": "QuanLyTruyenThong_TuVan\\Models\\ViewModels\\VoteResultStatisticsViewModel.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAA4wCIAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T12:41:11.759Z",
+              "WhenOpened": "2025-04-25T09:54:35.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "VoteResult.cs",
+              "DocumentMoniker": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\Models\\VoteResult.cs",
+              "RelativeDocumentMoniker": "QuanLyTruyenThong_TuVan\\Models\\VoteResult.cs",
+              "ToolTip": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\Models\\VoteResult.cs",
+              "RelativeToolTip": "QuanLyTruyenThong_TuVan\\Models\\VoteResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T07:32:13.364Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "VoteViewModel.cs",
-              "DocumentMoniker": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\Models\\ViewModels\\VoteViewModel.cs",
-              "RelativeDocumentMoniker": "QuanLyTruyenThong_TuVan\\Models\\ViewModels\\VoteViewModel.cs",
-              "ToolTip": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\Models\\ViewModels\\VoteViewModel.cs",
-              "RelativeToolTip": "QuanLyTruyenThong_TuVan\\Models\\ViewModels\\VoteViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T12:40:58.237Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "VoteController.cs",
               "DocumentMoniker": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\Areas\\Admin\\Controllers\\VoteController.cs",
               "RelativeDocumentMoniker": "QuanLyTruyenThong_TuVan\\Areas\\Admin\\Controllers\\VoteController.cs",
               "ToolTip": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\Areas\\Admin\\Controllers\\VoteController.cs",
               "RelativeToolTip": "QuanLyTruyenThong_TuVan\\Areas\\Admin\\Controllers\\VoteController.cs",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAowGcAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAE8CAAAAAAAAAAApwFkCAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T12:36:50.32Z",
+              "WhenOpened": "2025-04-25T06:47:14.377Z",
               "EditorCaption": ""
             }
           ]

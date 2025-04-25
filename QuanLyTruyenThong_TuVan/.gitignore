@@ -1,1 +1,4 @@
+# Ignore build results
+/bin/
+/obj/
 appsettings.Local.json

@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using QuanLyTruyenThong_TuVan.Models;
+using System.Reflection.Emit;
 namespace QuanLyTruyenThong_TuVan.Data
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationResident>
@@ -18,7 +19,7 @@ namespace QuanLyTruyenThong_TuVan.Data
         public DbSet<Vote> Votes { get; set; }
         public DbSet<VoteOption> VoteOptions { get; set; }
         public DbSet<VoteResult> VoteResults { get; set; }
-
+        public DbSet<ApplicationResident> ApplicationResidents { get; set; } // Để sử dụng trong VoteResult
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
@@ -35,6 +36,23 @@ namespace QuanLyTruyenThong_TuVan.Data
                 .WithMany(v => v.VoteResults)
                 .HasForeignKey(vr => vr.VoteId)
                 .OnDelete(DeleteBehavior.Restrict); // Hoặc .OnDelete(DeleteBehavior.NoAction)
+            builder.Entity<Response>()
+               .HasOne(r => r.Comment)
+               .WithMany(c => c.Responses)
+               .HasForeignKey(r => r.CommentId)
+               .OnDelete(DeleteBehavior.Restrict); // tránh multiple cascade paths
+
+            builder.Entity<Comment>()
+                .HasOne(c => c.Resident)
+                .WithMany() // giả sử không cần navigation ngược
+                .HasForeignKey(c => c.ResidentId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            builder.Entity<Response>()
+                .HasOne(r => r.Resident)
+                .WithMany() // giả sử không cần navigation ngược
+                .HasForeignKey(r => r.ResidentId)
+                .OnDelete(DeleteBehavior.Restrict);
 
         }
 

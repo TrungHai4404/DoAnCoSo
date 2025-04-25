@@ -30,9 +30,18 @@
                                 <td>@vote.EndDate.ToShortDateString()</td>
                                 <td>@vote.Status</td>
                                 <td>
-                                    <a class="btn btn-sm btn-info" asp-action="Detail" asp-route-id="@vote.Id">Chi tiết</a>
+                                    <a class="btn btn-sm btn-info" asp-action="Details" asp-route-id="@vote.Id">Chi tiết</a>
                                     <a class="btn btn-sm btn-warning" asp-action="Edit" asp-route-id="@vote.Id">Sửa</a>
                                     <a class="btn btn-sm btn-danger" asp-action="Delete" asp-route-id="@vote.Id">Xóa</a>
+                                    <a class="btn btn-sm btn-primary" asp-action="Results" asp-route-id="@vote.Id">Xem kết quả</a>
+                                    @if (vote.Status == VoteStatus.active && DateTime.Now >= vote.StartDate && DateTime.Now <= vote.EndDate)
+                                    {
+                                        <a asp-action="Vote" asp-route-id="@vote.Id" class="btn btn-success btn-sm">Tham gia biểu quyết</a>
+                                    }
+                                    else
+                                    {
+                                        <span class="text-muted">Biểu quyết không khả dụng</span>
+                                    }
                                 </td>
                             </tr>
                         }

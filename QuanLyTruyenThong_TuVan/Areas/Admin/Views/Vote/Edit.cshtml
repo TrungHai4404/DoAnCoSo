@@ -13,7 +13,7 @@
                     <h3 class="card-title">Thông tin bình chọn</h3>
                 </div>
                 <div class="card-body">
-                    <input type="hidden" name="DeletedOptionIds" id="DeletedOptionIds" value=""/>
+                    <input type="hidden" asp-for="DeletedOptionIds" id="DeletedOptionIds" value=""/>
                     
                     <div class="form-group">
                         <label>Tiêu đề</label>
@@ -37,9 +37,9 @@
                     <div id="question-container">
                         @for (int i = 0; i < Model.Options.Count; i++)
                         {
-                            <div class="form-group border p-3 mb-3 rounded bg-light position-relative" id="question-${i}">
+                            <div class="form-group question-item border p-3 mb-3 rounded bg-light position-relative" id="question-@i">
                                 <input type="hidden" name="Options[@i].Id" value="@Model.Options[i].Id" />
-
+                                <script>console.log("Option ID @i: @Model.Options[i].Id");</script>
                                 <button type="button" class="btn btn-sm btn-danger position-absolute" style="top:0; right:0;" onclick="removeQuestion(this)">X</button>
 
                                 <label>Câu hỏi</label>
@@ -105,20 +105,30 @@
         }
 
         function removeQuestion(btn) {
-            const question = btn.closest(".form-group");
-
+            const question = btn.closest(".question-item");
             const idInput = question.querySelector('input[name$=".Id"]');
             const id = idInput?.value;
-            if (id) {
-                const deletedIds = document.getElementById("DeletedOptionIds");
-                let current = deletedIds.value ? deletedIds.value.split(',') : [];
-                current.push(id);
-                deletedIds.value = current.join(',');
+
+            const deletedInput = document.getElementById("DeletedOptionIds");
+            if (!deletedInput) {
+                console.error("Không tìm thấy input #DeletedOptionIds");
+                return;
+            }
+
+            if (id && !isNaN(id) && id !== "0") {
+                let current = deletedInput.value ? deletedInput.value.split(',') : [];
+                if (!current.includes(id)) {
+                    current.push(id);
+                    deletedInput.value = current.join(',');
+                }
+                console.log("Xóa câu hỏi ID:", id);
+                console.log("Danh sách cần xóa:", deletedInput.value);
+            } else {
+                console.log("Không tìm thấy ID hoặc ID không hợp lệ:", id);
             }
 
             question.remove();
         }
-
 
     </script>
 }
