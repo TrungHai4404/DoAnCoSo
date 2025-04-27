@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|d:\\dacs\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|solutionrelative:quanlytruyenthong_tuvan\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|d:\\dacs\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\quanlytruyenthong_tuvan\\areas\\admin\\views\\vote\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{17FDDBED-C3E6-4DD3-B6F9-1CC1E563B7A3}|QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj|solutionrelative:quanlytruyenthong_tuvan\\areas\\admin\\views\\vote\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -46,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,7 +62,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
+              "Title": ".gitignore",
+              "DocumentMoniker": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\.gitignore",
+              "RelativeDocumentMoniker": "QuanLyTruyenThong_TuVan\\.gitignore",
+              "ToolTip": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\.gitignore",
+              "RelativeToolTip": "QuanLyTruyenThong_TuVan\\.gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-27T07:23:59.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\Program.cs",
               "RelativeDocumentMoniker": "QuanLyTruyenThong_TuVan\\Program.cs",
@@ -66,12 +83,11 @@
               "RelativeToolTip": "QuanLyTruyenThong_TuVan\\Program.cs",
               "ViewState": "AgIAACoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T16:22:15.603Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-24T16:22:15.603Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\Vote\\Edit.cshtml",
               "RelativeDocumentMoniker": "QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\Vote\\Edit.cshtml",
@@ -84,7 +100,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Vote.cshtml",
               "DocumentMoniker": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\Vote\\Vote.cshtml",
               "RelativeDocumentMoniker": "QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\Vote\\Vote.cshtml",
@@ -96,7 +112,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\Vote\\Index.cshtml",
               "RelativeDocumentMoniker": "QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\Vote\\Index.cshtml",
@@ -108,7 +124,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\Vote\\Create.cshtml",
               "RelativeDocumentMoniker": "QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\Vote\\Create.cshtml",
@@ -116,12 +132,11 @@
               "RelativeToolTip": "QuanLyTruyenThong_TuVan\\Areas\\Admin\\Views\\Vote\\Create.cshtml",
               "ViewState": "AgIAADsAAAAAAAAAAAAswFYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-24T12:39:07.582Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-24T12:39:07.582Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Vote.cs",
               "DocumentMoniker": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\Models\\Vote.cs",
               "RelativeDocumentMoniker": "QuanLyTruyenThong_TuVan\\Models\\Vote.cs",
@@ -129,12 +144,11 @@
               "RelativeToolTip": "QuanLyTruyenThong_TuVan\\Models\\Vote.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T12:42:12.278Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-24T12:42:12.278Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "VoteOption.cs",
               "DocumentMoniker": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\Models\\VoteOption.cs",
               "RelativeDocumentMoniker": "QuanLyTruyenThong_TuVan\\Models\\VoteOption.cs",
@@ -142,12 +156,11 @@
               "RelativeToolTip": "QuanLyTruyenThong_TuVan\\Models\\VoteOption.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAgwBIAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T12:41:11.759Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-24T12:41:11.759Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "VoteViewModel.cs",
               "DocumentMoniker": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\Models\\ViewModels\\VoteViewModel.cs",
               "RelativeDocumentMoniker": "QuanLyTruyenThong_TuVan\\Models\\ViewModels\\VoteViewModel.cs",
@@ -155,12 +168,11 @@
               "RelativeToolTip": "QuanLyTruyenThong_TuVan\\Models\\ViewModels\\VoteViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T12:40:58.237Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-24T12:40:58.237Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "VoteController.cs",
               "DocumentMoniker": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\Areas\\Admin\\Controllers\\VoteController.cs",
               "RelativeDocumentMoniker": "QuanLyTruyenThong_TuVan\\Areas\\Admin\\Controllers\\VoteController.cs",
@@ -168,8 +180,7 @@
               "RelativeToolTip": "QuanLyTruyenThong_TuVan\\Areas\\Admin\\Controllers\\VoteController.cs",
               "ViewState": "AgIAAGUAAAAAAAAAAAAswGcAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T12:36:50.32Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-24T12:36:50.32Z"
             }
           ]
         },
