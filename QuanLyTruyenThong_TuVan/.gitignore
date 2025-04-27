@@ -1,1 +1,3 @@
+# Ignore build results
+.vs/
 appsettings.Local.json

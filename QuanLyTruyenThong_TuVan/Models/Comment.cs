@@ -6,7 +6,8 @@ namespace QuanLyTruyenThong_TuVan.Models
     {
         public int Id { get; set; }
 
-        public int ResidentSend { get; set; }
+        // Foreign key đến ApplicationResident (có thể cần thêm nếu bạn muốn thiết lập FK)
+        public string ResidentId { get; set; }
         public ApplicationResident Resident { get; set; }
 
         [StringLength(100)]
@@ -27,5 +28,9 @@ namespace QuanLyTruyenThong_TuVan.Models
 
         [StringLength(50)]
         public string Status { get; set; }
+
+        // Quan hệ 1-n với Response
+        public ICollection<Response> Responses { get; set; }
     }
+
 }

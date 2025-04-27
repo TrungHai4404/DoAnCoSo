@@ -1,0 +1,78 @@
+﻿@model QuanLyTruyenThong_TuVan.Models.ViewModels.VoteViewModel
+@{
+    ViewData["Title"] = "Chi tiết biểu quyết";
+    Layout = "_LayoutAdmin";
+}
+
+<section class="content">
+    <div class="container-fluid">
+        <div class="card card-info">
+            <div class="card-header">
+                <h3 class="card-title">Chi tiết biểu quyết</h3>
+            </div>
+            <div class="card-body">
+                <dl class="row">
+                    <dt class="col-sm-2">Tiêu đề</dt>
+                    <dd class="col-sm-10">@Model.Title</dd>
+                    <dt class="col-sm-2">Mô tả</dt>
+                    <dd class="col-sm-10">@Model.Description</dd>
+                    <dt class="col-sm-2">Ngày bắt đầu</dt>
+                    <dd class="col-sm-10">@Model.StartDate.ToString("dd/MM/yyyy")</dd>
+                    <dt class="col-sm-2">Ngày kết thúc</dt>
+                    <dd class="col-sm-10">@Model.EndDate.ToString("dd/MM/yyyy")</dd>
+                    <dt class="col-sm-2">Trạng thái</dt>
+                    <dd class="col-sm-10">@Model.Status</dd>
+                </dl>
+
+                <hr />
+                <h5>Danh sách câu hỏi</h5>
+                @if (Model.Options.Any())
+                {
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>STT</th>
+                                <th>Câu hỏi</th>
+                                <th>Loại</th>
+                                <th>Lựa chọn</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @for (int i = 0; i < Model.Options.Count; i++)
+                            {
+                                <tr>
+                                    <td>@(i + 1)</td>
+                                    <td>@Model.Options[i].QuestionText</td>
+                                    <td>@Model.Options[i].QuestionType</td>
+                                    <td>
+                                        @if (!string.IsNullOrEmpty(Model.Options[i].RawOptions))
+                                        {
+                                            var options = Model.Options[i].RawOptions.Split('\n', StringSplitOptions.RemoveEmptyEntries);
+                                            <ul>
+                                                @foreach (var option in options)
+                                                {
+                                                    <li>@option</li>
+                                                }
+                                            </ul>
+                                        }
+                                        else
+                                        {
+                                            <span>Không có lựa chọn</span>
+                                        }
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                }
+                else
+                {
+                    <p>Không có câu hỏi nào.</p>
+                }
+            </div>
+            <div class="card-footer">
+                <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+            </div>
+        </div>
+    </div>
+</section>

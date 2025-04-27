@@ -80,12 +80,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVm90ZVxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/DACS/QuanLyTruyenThong_TuVan/QuanLyTruyenThong_TuVan/QuanLyTruyenThong_TuVan/Areas/Admin/Views/Vote/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVm90ZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/DACS/QuanLyTruyenThong_TuVan/QuanLyTruyenThong_TuVan/QuanLyTruyenThong_TuVan/Areas/Admin/Views/Vote/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVm90ZVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/DACS/QuanLyTruyenThong_TuVan/QuanLyTruyenThong_TuVan/QuanLyTruyenThong_TuVan/Areas/Admin/Views/Vote/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVm90ZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DACS/QuanLyTruyenThong_TuVan/QuanLyTruyenThong_TuVan/QuanLyTruyenThong_TuVan/Areas/Admin/Views/Vote/Results.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVm90ZVxSZXN1bHRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/DACS/QuanLyTruyenThong_TuVan/QuanLyTruyenThong_TuVan/QuanLyTruyenThong_TuVan/Areas/Admin/Views/Vote/Vote.cshtml]

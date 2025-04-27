@@ -1,1 +1,127 @@
-﻿
+﻿@model QuanLyTruyenThong_TuVan.Models.ViewModels.VoteResponseViewModel
+@{
+    ViewData["Title"] = "Tham gia biểu quyết";
+    Layout = "_Layout";
+}
+
+<section class="content">
+    <div class="container-fluid">
+        <div class="card card-primary">
+            <div class="card-header">
+                <h3 class="card-title">@Model.Title</h3>
+            </div>
+            <div class="card-body">
+                @if (TempData["Error"] != null)
+                {
+                    <div class="alert alert-danger alert-dismissible">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                        <h5><i class="icon fas fa-exclamation-triangle"></i> Lỗi!</h5>
+                        @TempData["Error"]
+                    </div>
+                }
+                @if (TempData["Success"] != null)
+                {
+                    <div class="alert alert-success alert-dismissible">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                        <h5><i class="icon fas fa-check"></i> Thành công!</h5>
+                        @TempData["Success"]
+                    </div>
+                }
+
+                <dl class="row">
+                    <dt class="col-sm-2">Mô tả</dt>
+                    <dd class="col-sm-10">@Model.Description</dd>
+                    <dt class="col-sm-2">Ngày bắt đầu</dt>
+                    <dd class="col-sm-10">@Model.StartDate.ToString("dd/MM/yyyy")</dd>
+                    <dt class="col-sm-2">Ngày kết thúc</dt>
+                    <dd class="col-sm-10">@Model.EndDate.ToString("dd/MM/yyyy")</dd>
+                    <dt class="col-sm-2">Trạng thái</dt>
+                    <dd class="col-sm-10">@Model.Status</dd>
+                </dl>
+
+                <hr />
+                <h5>Danh sách câu hỏi</h5>
+                <form asp-action="Vote" method="post" id="voteForm">
+                    <input type="hidden" asp-for="VoteId" />
+                    <input type="hidden" asp-for="Title" />
+                    <input type="hidden" asp-for="Description" />
+                    <input type="hidden" asp-for="Status" />
+
+                    @for (int i = 0; i < Model.Responses.Count; i++)
+                    {
+                        <div class="form-group mb-4">
+                            <input type="hidden" asp-for="Responses[i].VoteOptionId" />
+                            <input type="hidden" asp-for="Responses[i].QuestionText" />
+                            <input type="hidden" asp-for="Responses[i].QuestionType" />
+                            <h6>@(i + 1). @Model.Responses[i].QuestionText</h6>
+                            <p><small>Loại: @Model.Responses[i].QuestionType</small></p>
+
+                            @if (Model.Responses[i].QuestionType == QuestionType.SingleChoice)
+                            {
+                                @if (Model.Responses[i].Options == null || !Model.Responses[i].Options.Any())
+                                {
+                                    <p class="text-danger">Câu hỏi này không có lựa chọn nào.</p>
+                                }
+                                else
+                                {
+                                    @foreach (var option in Model.Responses[i].Options)
+                                    {
+                                        <div class="form-check">
+                                            <input type="radio" asp-for="Responses[i].SelectedOption" value="@option" class="form-check-input" id="option-@i-@option.Replace(" ", "-")" required />
+                                            <label class="form-check-label" for="option-@i-@option.Replace(" ", "-")">@option</label>
+                                        </div>
+                                    }
+                                }
+                                <span asp-validation-for="Responses[i].SelectedOption" class="text-danger"></span>
+                                <span asp-validation-for="Responses[i].Options" class="text-danger"></span>
+                            }
+                            else if (Model.Responses[i].QuestionType == QuestionType.MultipleChoice)
+                            {
+                                @if (Model.Responses[i].Options == null || !Model.Responses[i].Options.Any())
+                                {
+                                    <p class="text-danger">Câu hỏi này không có lựa chọn nào.</p>
+                                }
+                                else
+                                {
+                                    @foreach (var option in Model.Responses[i].Options)
+                                    {
+                                        <div class="form-check">
+                                            <input type="checkbox" name="Responses[@i].SelectedOptions" value="@option" class="form-check-input" id="option-@i-@option.Replace(" ", "-")"
+                                            @(Model.Responses[i].SelectedOptions != null && Model.Responses[i].SelectedOptions.Contains(option) ? "checked" : "") />
+                                            <label class="form-check-label" for="option-@i-@option.Replace(" ", "-")">@option</label>
+                                        </div>
+                                    }
+                                }
+                                <span asp-validation-for="Responses[i].SelectedOptions" class="text-danger"></span>
+                                <span asp-validation-for="Responses[i].Options" class="text-danger"></span>
+                            }
+                            else if (Model.Responses[i].QuestionType == QuestionType.Text)
+                            {
+                                <textarea asp-for="Responses[i].TextResponse" class="form-control" rows="4" placeholder="Nhập câu trả lời của bạn" required></textarea>
+                                <span asp-validation-for="Responses[i].TextResponse" class="text-danger"></span>
+                            }
+                        </div>
+                    }
+
+                    <div class="card-footer">
+                        <button type="submit" class="btn btn-primary">Gửi biểu quyết</button>
+                        <a asp-action="Index" asp-controller="Home" class="btn btn-secondary">Quay lại</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            setTimeout(function () {
+                $('.alert').fadeOut('slow');
+            }, 5000);
+        });
+    </script>
+}

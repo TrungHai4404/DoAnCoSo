@@ -6,9 +6,11 @@ namespace QuanLyTruyenThong_TuVan.Models
     {
         public int Id { get; set; }
 
-        public int ResidentId { get; set; }
+        // Foreign key đến ApplicationResident
+        public string ResidentId { get; set; }
         public ApplicationResident Resident { get; set; }
 
+        // Foreign key đến Comment
         public int CommentId { get; set; }
         public Comment Comment { get; set; }
 
@@ -19,4 +21,5 @@ namespace QuanLyTruyenThong_TuVan.Models
 
         public DateTime CreatedAt { get; set; } = DateTime.Now;
     }
+
 }

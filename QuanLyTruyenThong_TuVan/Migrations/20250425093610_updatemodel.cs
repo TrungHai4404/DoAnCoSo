@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace QuanLyTruyenThong_TuVan.Migrations
 {
     /// <inheritdoc />
-    public partial class updateDB : Migration
+    public partial class updatemodel : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -190,8 +190,7 @@ namespace QuanLyTruyenThong_TuVan.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    ResidentSend = table.Column<int>(type: "int", nullable: false),
-                    ResidentId = table.Column<string>(type: "nvarchar(450)", nullable: true),
+                    ResidentId = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     ResidentName = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     Title = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false),
                     Content = table.Column<string>(type: "nvarchar(max)", nullable: false),
@@ -207,7 +206,8 @@ namespace QuanLyTruyenThong_TuVan.Migrations
                         name: "FK_Comments_AspNetUsers_ResidentId",
                         column: x => x.ResidentId,
                         principalTable: "AspNetUsers",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -222,8 +222,7 @@ namespace QuanLyTruyenThong_TuVan.Migrations
                     ImagesUrl = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
                     SendAt = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    SenderId = table.Column<int>(type: "int", nullable: false),
-                    SenderId1 = table.Column<string>(type: "nvarchar(450)", nullable: true),
+                    SenderId = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     Category = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     Status = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false)
                 },
@@ -231,10 +230,11 @@ namespace QuanLyTruyenThong_TuVan.Migrations
                 {
                     table.PrimaryKey("PK_News", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_News_AspNetUsers_SenderId1",
-                        column: x => x.SenderId1,
+                        name: "FK_News_AspNetUsers_SenderId",
+                        column: x => x.SenderId,
                         principalTable: "AspNetUsers",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -250,7 +250,7 @@ namespace QuanLyTruyenThong_TuVan.Migrations
                     CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
                     SentAt = table.Column<DateTime>(type: "datetime2", nullable: true),
                     SenderId = table.Column<int>(type: "int", nullable: false),
-                    SenderId1 = table.Column<string>(type: "nvarchar(450)", nullable: true),
+                    SenderId1 = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     TargetAudience = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false)
                 },
                 constraints: table =>
@@ -260,7 +260,8 @@ namespace QuanLyTruyenThong_TuVan.Migrations
                         name: "FK_Notifications_AspNetUsers_SenderId1",
                         column: x => x.SenderId1,
                         principalTable: "AspNetUsers",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -275,7 +276,7 @@ namespace QuanLyTruyenThong_TuVan.Migrations
                     EndDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CreatedByUserId = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    Status = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false)
+                    Status = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -294,8 +295,7 @@ namespace QuanLyTruyenThong_TuVan.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    ResidentId = table.Column<int>(type: "int", nullable: false),
-                    ResidentId1 = table.Column<string>(type: "nvarchar(450)", nullable: true),
+                    ResidentId = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     CommentId = table.Column<int>(type: "int", nullable: false),
                     TitleComment = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false),
                     Content = table.Column<string>(type: "nvarchar(max)", nullable: false),
@@ -305,16 +305,17 @@ namespace QuanLyTruyenThong_TuVan.Migrations
                 {
                     table.PrimaryKey("PK_Responses", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Responses_AspNetUsers_ResidentId1",
-                        column: x => x.ResidentId1,
+                        name: "FK_Responses_AspNetUsers_ResidentId",
+                        column: x => x.ResidentId,
                         principalTable: "AspNetUsers",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_Responses_Comments_CommentId",
                         column: x => x.CommentId,
                         principalTable: "Comments",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -347,8 +348,8 @@ namespace QuanLyTruyenThong_TuVan.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     VoteId = table.Column<int>(type: "int", nullable: false),
                     VoteOptionId = table.Column<int>(type: "int", nullable: false),
-                    ResidentId = table.Column<int>(type: "int", nullable: false),
-                    ResidentId1 = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    ResidentName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ResidentId = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     Answer = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     VoteAt = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
@@ -356,8 +357,8 @@ namespace QuanLyTruyenThong_TuVan.Migrations
                 {
                     table.PrimaryKey("PK_VoteResults", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_VoteResults_AspNetUsers_ResidentId1",
-                        column: x => x.ResidentId1,
+                        name: "FK_VoteResults_AspNetUsers_ResidentId",
+                        column: x => x.ResidentId,
                         principalTable: "AspNetUsers",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
@@ -425,9 +426,9 @@ namespace QuanLyTruyenThong_TuVan.Migrations
                 column: "ResidentId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_News_SenderId1",
+                name: "IX_News_SenderId",
                 table: "News",
-                column: "SenderId1");
+                column: "SenderId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Notifications_SenderId1",
@@ -440,9 +441,9 @@ namespace QuanLyTruyenThong_TuVan.Migrations
                 column: "CommentId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Responses_ResidentId1",
+                name: "IX_Responses_ResidentId",
                 table: "Responses",
-                column: "ResidentId1");
+                column: "ResidentId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_VoteOptions_VoteId",
@@ -450,9 +451,9 @@ namespace QuanLyTruyenThong_TuVan.Migrations
                 column: "VoteId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_VoteResults_ResidentId1",
+                name: "IX_VoteResults_ResidentId",
                 table: "VoteResults",
-                column: "ResidentId1");
+                column: "ResidentId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_VoteResults_VoteId",

@@ -293,15 +293,13 @@ namespace QuanLyTruyenThong_TuVan.Migrations
                         .HasColumnType("nvarchar(255)");
 
                     b.Property<string>("ResidentId")
+                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("ResidentName")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
-
-                    b.Property<int>("ResidentSend")
-                        .HasColumnType("int");
 
                     b.Property<string>("Status")
                         .IsRequired()
@@ -357,10 +355,8 @@ namespace QuanLyTruyenThong_TuVan.Migrations
                     b.Property<DateTime?>("SendAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("SenderId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("SenderId1")
+                    b.Property<string>("SenderId")
+                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Status")
@@ -375,7 +371,7 @@ namespace QuanLyTruyenThong_TuVan.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("SenderId1");
+                    b.HasIndex("SenderId");
 
                     b.ToTable("News");
                 });
@@ -404,6 +400,7 @@ namespace QuanLyTruyenThong_TuVan.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("SenderId1")
+                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<DateTime?>("SentAt")
@@ -449,10 +446,8 @@ namespace QuanLyTruyenThong_TuVan.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("ResidentId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("ResidentId1")
+                    b.Property<string>("ResidentId")
+                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("TitleComment")
@@ -464,7 +459,7 @@ namespace QuanLyTruyenThong_TuVan.Migrations
 
                     b.HasIndex("CommentId");
 
-                    b.HasIndex("ResidentId1");
+                    b.HasIndex("ResidentId");
 
                     b.ToTable("Responses");
                 });
@@ -551,10 +546,7 @@ namespace QuanLyTruyenThong_TuVan.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("ResidentId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("ResidentId1")
+                    b.Property<string>("ResidentId")
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
@@ -569,7 +561,7 @@ namespace QuanLyTruyenThong_TuVan.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ResidentId1");
+                    b.HasIndex("ResidentId");
 
                     b.HasIndex("VoteId");
 
@@ -642,7 +634,9 @@ namespace QuanLyTruyenThong_TuVan.Migrations
                 {
                     b.HasOne("QuanLyTruyenThong_TuVan.Models.ApplicationResident", "Resident")
                         .WithMany()
-                        .HasForeignKey("ResidentId");
+                        .HasForeignKey("ResidentId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
 
                     b.Navigation("Resident");
                 });
@@ -651,7 +645,9 @@ namespace QuanLyTruyenThong_TuVan.Migrations
                 {
                     b.HasOne("QuanLyTruyenThong_TuVan.Models.ApplicationResident", "Sender")
                         .WithMany()
-                        .HasForeignKey("SenderId1");
+                        .HasForeignKey("SenderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Sender");
                 });
@@ -660,7 +656,9 @@ namespace QuanLyTruyenThong_TuVan.Migrations
                 {
                     b.HasOne("QuanLyTruyenThong_TuVan.Models.ApplicationResident", "Sender")
                         .WithMany()
-                        .HasForeignKey("SenderId1");
+                        .HasForeignKey("SenderId1")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Sender");
                 });
@@ -668,14 +666,16 @@ namespace QuanLyTruyenThong_TuVan.Migrations
             modelBuilder.Entity("QuanLyTruyenThong_TuVan.Models.Response", b =>
                 {
                     b.HasOne("QuanLyTruyenThong_TuVan.Models.Comment", "Comment")
-                        .WithMany()
+                        .WithMany("Responses")
                         .HasForeignKey("CommentId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("QuanLyTruyenThong_TuVan.Models.ApplicationResident", "Resident")
                         .WithMany()
-                        .HasForeignKey("ResidentId1");
+                        .HasForeignKey("ResidentId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
 
                     b.Navigation("Comment");
 
@@ -708,7 +708,7 @@ namespace QuanLyTruyenThong_TuVan.Migrations
                 {
                     b.HasOne("QuanLyTruyenThong_TuVan.Models.ApplicationResident", "Resident")
                         .WithMany()
-                        .HasForeignKey("ResidentId1")
+                        .HasForeignKey("ResidentId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -734,6 +734,11 @@ namespace QuanLyTruyenThong_TuVan.Migrations
             modelBuilder.Entity("QuanLyTruyenThong_TuVan.Models.Apartment", b =>
                 {
                     b.Navigation("Residents");
+                });
+
+            modelBuilder.Entity("QuanLyTruyenThong_TuVan.Models.Comment", b =>
+                {
+                    b.Navigation("Responses");
                 });
 
             modelBuilder.Entity("QuanLyTruyenThong_TuVan.Models.Vote", b =>
