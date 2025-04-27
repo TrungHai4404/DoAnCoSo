@@ -1,0 +1,31 @@
+﻿@model QuanLyTruyenThong_TuVan.Models.New
+
+@{
+    ViewData["Title"] = "Xoá tin tức";
+}
+
+<div class="card card-danger">
+    <div class="card-header">
+        <h3 class="card-title">Xác nhận xoá tin</h3>
+    </div>
+    <div class="card-body">
+        <p>Bạn có chắc chắn muốn xoá tin tức sau?</p>
+        <dl class="row">
+            <dt class="col-sm-3">Tiêu đề</dt>
+            <dd class="col-sm-9">@Model.Title</dd>
+
+            <dt class="col-sm-3">Thể loại</dt>
+            <dd class="col-sm-9">@Model.Category</dd>
+
+            <dt class="col-sm-3">Ngày tạo</dt>
+            <dd class="col-sm-9">@Model.CreatedAt.ToString("dd/MM/yyyy")</dd>
+        </dl>
+    </div>
+    <div class="card-footer">
+        <form asp-action="Delete">
+            <input type="hidden" asp-for="Id" />
+            <button type="submit" class="btn btn-danger">Xoá</button>
+            <a asp-action="Index" class="btn btn-secondary">Huỷ</a>
+        </form>
+    </div>
+</div>

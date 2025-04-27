@@ -18,6 +18,7 @@ namespace QuanLyTruyenThong_TuVan.Data
         public DbSet<Vote> Votes { get; set; }
         public DbSet<VoteOption> VoteOptions { get; set; }
         public DbSet<VoteResult> VoteResults { get; set; }
+        public object Categories { get; internal set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
