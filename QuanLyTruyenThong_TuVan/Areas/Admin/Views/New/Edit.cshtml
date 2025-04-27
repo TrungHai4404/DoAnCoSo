@@ -1,0 +1,71 @@
+﻿@model QuanLyTruyenThong_TuVan.Models.New
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Sửa tin tức";
+}
+
+<div class="card card-warning">
+    <div class="card-header">
+        <h3 class="card-title">Sửa tin tức</h3>
+    </div>
+    <form asp-action="Edit" enctype="multipart/form-data">
+        <input type="hidden" asp-for="Id" />
+        <div class="card-body">
+            <div class="form-group">
+                <label>Tiêu đề</label>
+                <input asp-for="Title" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label>Mô tả</label>
+                <textarea asp-for="Notes" class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+                <label>Nội dung</label>
+                <textarea asp-for="Content" class="form-control" rows="5"></textarea>
+            </div>
+            <div class="form-group">
+                <label class="form-label">Upload Image</label>
+                <!-- Hiển thị hình ảnh hiện tại (nếu có) -->
+                @if (!string.IsNullOrEmpty(Model.ImagesUrl)) {
+                    <div>
+                        <img src="@Model.ImagesUrl" alt="Current Image" style="max-width: 200px; height: auto;" />
+                    </div>
+                    <div>
+                        <label>Chọn hình ảnh mới (nếu có):</label>
+                        <input type="file" name="imagesUrl" class="form-control" />
+                    </div>
+                }
+                else {
+                    <div>
+                        <label>Chọn hình ảnh:</label>
+                        <input type="file" name="imagesUrl" class="form-control" />
+                    </div>
+                }
+                <span class="text-danger" asp-validation-for="ImagesUrl"></span>
+            </div>
+            <div class="form-group">
+                <label>Thể loại</label>
+                <input asp-for="Category" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label>Trạng thái</label>
+                <input asp-for="Status" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label>Ngày gửi</label>
+                <input asp-for="SendAt" type="datetime-local" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label>Người gửi</label>
+                <select asp-for="SenderId" class="form-control" asp-items="ViewBag.Senders">
+                    <option value="">-- Chọn người gửi --</option>
+                </select>
+            </div>
+        </div>
+        <div class="card-footer">
+            <button type="submit" class="btn btn-warning">Cập nhật</button>
+            <a asp-action="Index" class="btn btn-secondary">Huỷ</a>
+        </div>
+    </form>
+</div>

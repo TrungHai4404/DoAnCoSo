@@ -1,0 +1,46 @@
+﻿@model IEnumerable<QuanLyTruyenThong_TuVan.Models.New>
+
+@{
+    ViewData["Title"] = "Danh sách tin tức";
+    Layout = "LayoutAdmin";
+}
+
+<div class="card">
+    <div class="card-header">
+        <h3 class="card-title">Danh sách tin tức</h3>
+        <div class="card-tools">
+            <a asp-action="Create" class="btn btn-primary btn-sm">Thêm tin mới</a>
+        </div>
+    </div>
+    <div class="card-body table-responsive p-0">
+        <table class="table table-hover text-nowrap">
+            <thead>
+                <tr>
+                    <th>Tiêu đề</th>
+                    <th>Thể loại</th>
+                    <th>Ngày tạo</th>
+                    <th>Người gửi</th>
+                    <th>Trạng thái</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model) {
+                    <tr>
+                        <td>@item.Title</td>
+                        <td>@item.Category</td>
+                        <td>@item.CreatedAt.ToString("dd/MM/yyyy")</td>
+                        <td>@item.Sender?.FullName</td>
+                        <td>@item.Status</td>
+                        <td>
+                            <a asp-action="Display" asp-route-id="@item.Id" class="btn btn-sm btn-info">Xem</a>
+                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning">Sửa</a>
+                            <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Xoá</a>
+                        </td>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
