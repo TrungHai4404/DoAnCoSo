@@ -121,7 +121,15 @@ namespace QuanLyTruyenThong_TuVan.Controllers
             }
 
             // Cập nhật ApartmentId
-            user.ApartmentId = ApartmentId;
+            if(ApartmentId == 0)
+            {
+                user.ApartmentId = null; // Nếu ApartmentId là 0, gán null
+            }
+            else
+            {
+                user.ApartmentId = ApartmentId;
+            }
+            
             await _userManager.UpdateAsync(user);
 
             // Lấy vai trò hiện tại
@@ -176,10 +184,15 @@ namespace QuanLyTruyenThong_TuVan.Controllers
 
             // Kiểm tra nếu là tài khoản đang đăng nhập thì không cho phép xóa
             var currentUserId = _userManager.GetUserId(User);
+            if (currentUserId == null)
+            {
+                TempData["Error"] = "Lỗi không tìm thấy người dùng hiện tại.";
+                return RedirectToAction(nameof(Delete));
+            }
             if (user.Id == currentUserId)
             {
                 TempData["Error"] = "Bạn không thể xóa tài khoản đang đăng nhập.";
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Delete));
             }
 
             var result = await _userManager.DeleteAsync(user);

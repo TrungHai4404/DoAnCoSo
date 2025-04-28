@@ -12,6 +12,20 @@
             </div>
 
             <div class="card-body">
+                @if (TempData["Success"] != null)
+                {
+                    <div class="alert alert-success alert-dismissible">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                        @TempData["Success"]
+                    </div>
+                }
+                @if (TempData["Error"] != null)
+                {
+                    <div class="alert alert-success alert-dismissible">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                        @TempData["Error"]
+                    </div>
+                }
                 <div class="alert alert-danger">
                     <strong>Bạn có chắc chắn muốn xóa tài khoản sau không?</strong>
                 </div>

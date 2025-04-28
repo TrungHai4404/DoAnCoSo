@@ -11,6 +11,21 @@
             <a asp-action="Create" class="btn btn-primary mb-3">Tạo biểu quyết mới</a>
             <div class="card-header"><h3 class="card-title">Danh sách bình chọn</h3></div>
             <div class="card-body">
+                @if (TempData["Success"] != null)
+                {
+                    <div class="alert alert-success alert-dismissible">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                        @TempData["Success"]
+                    </div>
+                }
+                @if (TempData["Error"] != null)
+                {
+                    <div class="alert alert-danger alert-dismissible">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                        <h5><i class="icon fas fa-exclamation-triangle"></i> Lỗi!</h5>
+                        @TempData["Error"]
+                    </div>
+                }
                 <table class="table table-bordered">
                     <thead>
                         <tr>

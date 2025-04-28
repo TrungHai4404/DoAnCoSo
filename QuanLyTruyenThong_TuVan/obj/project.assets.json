@@ -9401,11 +9401,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LENOVO\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj",
+      "projectUniqueName": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj",
       "projectName": "QuanLyTruyenThong_TuVan",
-      "projectPath": "C:\\Users\\LENOVO\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj",
+      "projectPath": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj",
       "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LENOVO\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\obj\\",
+      "outputPath": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -9529,7 +9529,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

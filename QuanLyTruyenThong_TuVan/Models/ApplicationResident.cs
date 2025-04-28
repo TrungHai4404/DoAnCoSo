@@ -11,6 +11,6 @@ namespace QuanLyTruyenThong_TuVan.Models
         public string? Address { get; set; }
 
         public int? ApartmentId { get; set; } // Khóa ngoại
-        public Apartment Apartment { get; set; } // Navigation property
+        public Apartment? Apartment { get; set; } // Navigation property
     }
 }

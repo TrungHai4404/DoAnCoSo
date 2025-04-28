@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HRXTRdrOrJ4=",
+  "dgSpecHash": "EZ+3+br6QLA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\LENOVO\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj",
+  "projectFilePath": "D:\\DACS\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan\\QuanLyTruyenThong_TuVan.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LENOVO\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
