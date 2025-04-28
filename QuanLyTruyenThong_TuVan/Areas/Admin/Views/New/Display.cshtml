@@ -1,0 +1,53 @@
+﻿@model QuanLyTruyenThong_TuVan.Models.New
+
+@{
+    ViewData["Title"] = "Chi tiết tin tức";
+    Layout = "_LayoutAdmin";
+}
+
+<div class="card card-primary card-outline">
+    <div class="card-header">
+        <h3 class="card-title">
+            <i class="fas fa-newspaper"></i> Chi tiết tin tức
+        </h3>
+    </div>
+    <div class="card-body">
+        <dl class="row">
+            <dt class="col-sm-3">Tiêu đề</dt>
+            <dd class="col-sm-9">@Model.Title</dd>
+
+            <dt class="col-sm-3">Mô tả</dt>
+            <dd class="col-sm-9">@Model.Notes</dd>
+
+            <dt class="col-sm-3">Nội dung</dt>
+            <dd class="col-sm-9">@Model.Content</dd>
+
+            <dt class="col-sm-3">Hình ảnh</dt>
+            <dd class="col-sm-9">
+                @if (!string.IsNullOrEmpty(Model.ImagesUrl)) {
+                    <img src="@Model.ImagesUrl" alt="Image" class="img-fluid rounded border" style="max-height: 300px;" />
+                }
+                else {
+                    <span class="text-muted">Không có hình ảnh</span>
+                }
+            </dd>
+
+            <dt class="col-sm-3">Thể loại</dt>
+            <dd class="col-sm-9">@Model.DanhMuc</dd>
+
+            <dt class="col-sm-3">Trạng thái</dt>
+            <dd class="col-sm-9">@Model.TrangThai</dd>
+
+            <dt class="col-sm-3">Ngày gửi</dt>
+            <dd class="col-sm-9">@Model.SendAt?.ToString("dd/MM/yyyy HH:mm")</dd>
+
+            <dt class="col-sm-3">Người gửi</dt>
+            <dd class="col-sm-9">@Model.Sender?.FullName</dd>
+        </dl>
+    </div>
+    <div class="card-footer text-right">
+        <a asp-action="Index" class="btn btn-secondary">
+            <i class="fas fa-arrow-left"></i> Trở về danh sách
+        </a>
+    </div>
+</div>
