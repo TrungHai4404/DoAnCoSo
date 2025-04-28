@@ -1,3 +1,5 @@
 # Ignore build results
+bin/
+obj/
 .vs/
 appsettings.Local.json

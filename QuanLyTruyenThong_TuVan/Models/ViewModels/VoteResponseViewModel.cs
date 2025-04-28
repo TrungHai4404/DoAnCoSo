@@ -8,6 +8,7 @@ namespace QuanLyTruyenThong_TuVan.Models.ViewModels
         public int VoteId { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
+        public string Content { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public VoteStatus Status { get; set; }

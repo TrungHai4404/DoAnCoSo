@@ -38,6 +38,7 @@ namespace QuanLyTruyenThong_TuVan.Areas.Admin.Controllers
             {
                 Title = model.Title,
                 Description = model.Description,
+                Content = model.Content,
                 StartDate = model.StartDate,
                 EndDate = model.EndDate,
                 CreatedBy = user.FullName,
@@ -79,6 +80,7 @@ namespace QuanLyTruyenThong_TuVan.Areas.Admin.Controllers
                 VoteId = vote.Id,
                 Title = vote.Title,
                 Description = vote.Description,
+                Content = vote.Content,
                 StartDate = vote.StartDate,
                 EndDate = vote.EndDate,
                 Status = vote.Status,
@@ -116,6 +118,7 @@ namespace QuanLyTruyenThong_TuVan.Areas.Admin.Controllers
             // Cập nhật thông tin biểu quyết
             vote.Title = model.Title;
             vote.Description = model.Description;
+            vote.Content = model.Content;
             vote.StartDate = model.StartDate;
             vote.EndDate = model.EndDate;
             vote.Status = model.Status;
@@ -182,6 +185,7 @@ namespace QuanLyTruyenThong_TuVan.Areas.Admin.Controllers
                 VoteId = vote.Id,
                 Title = vote.Title,
                 Description = vote.Description,
+                Content = vote.Content,
                 StartDate = vote.StartDate,
                 EndDate = vote.EndDate,
                 Status = vote.Status,
@@ -204,6 +208,7 @@ namespace QuanLyTruyenThong_TuVan.Areas.Admin.Controllers
         {
             var vote = await _context.Votes
                 .Include(v => v.VoteOptions)
+                .Include(c => c.VoteResults)
                 .FirstOrDefaultAsync(v => v.Id == id);
 
             if (vote == null)
@@ -214,7 +219,9 @@ namespace QuanLyTruyenThong_TuVan.Areas.Admin.Controllers
             try
             {
                 // Xóa tất cả VoteOptions liên quan
+                _context.VoteResults.RemoveRange(vote.VoteResults);
                 _context.VoteOptions.RemoveRange(vote.VoteOptions);
+               
                 // Xóa Vote
                 _context.Votes.Remove(vote);
                 await _context.SaveChangesAsync();
@@ -246,6 +253,7 @@ namespace QuanLyTruyenThong_TuVan.Areas.Admin.Controllers
                 VoteId = vote.Id,
                 Title = vote.Title,
                 Description = vote.Description,
+                Content = vote.Content,
                 StartDate = vote.StartDate,
                 EndDate = vote.EndDate,
                 Status = vote.Status,
@@ -302,6 +310,7 @@ namespace QuanLyTruyenThong_TuVan.Areas.Admin.Controllers
                 VoteId = vote.Id,
                 Title = vote.Title,
                 Description = vote.Description,
+                Content = vote.Content,
                 Status = vote.Status,
                 Responses = vote.VoteOptions.Select(o => new VoteOptionResponseViewModel
                 {
