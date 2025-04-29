@@ -396,10 +396,7 @@ namespace QuanLyTruyenThong_TuVan.Migrations
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
-                    b.Property<int>("SenderId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("SenderId1")
+                    b.Property<string>("SenderId")
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
@@ -423,7 +420,7 @@ namespace QuanLyTruyenThong_TuVan.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("SenderId1");
+                    b.HasIndex("SenderId");
 
                     b.ToTable("Notifications");
                 });
@@ -656,7 +653,7 @@ namespace QuanLyTruyenThong_TuVan.Migrations
                 {
                     b.HasOne("QuanLyTruyenThong_TuVan.Models.ApplicationResident", "Sender")
                         .WithMany()
-                        .HasForeignKey("SenderId1")
+                        .HasForeignKey("SenderId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
