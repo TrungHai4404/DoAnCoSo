@@ -1,0 +1,45 @@
+﻿@model QuanLyTruyenThong_TuVan.Models.Comment
+
+@{
+    ViewData["Title"] = "Xóa góp ý";
+}
+
+<h1>Xóa góp ý</h1>
+
+<h3>Bạn có chắc chắn muốn xóa góp ý này?</h3>
+<div>
+    <h4>Góp ý</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Tiêu đề
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Title
+        </dd>
+        <dt class="col-sm-2">
+            Tên người dân
+        </dt>
+        <dd class="col-sm-10">
+            @Model.ResidentName
+        </dd>
+        <dt class="col-sm-2">
+            Loại
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Type
+        </dd>
+        <dt class="col-sm-2">
+            Trạng thái
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Status
+        </dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Xóa" class="btn btn-danger" /> |
+        <a asp-action="Index">Quay lại danh sách</a>
+    </form>
+</div>

@@ -1,0 +1,40 @@
+﻿@model IEnumerable<QuanLyTruyenThong_TuVan.Models.Comment>
+
+@{
+    ViewData["Title"] = "Danh sách góp ý";
+}
+
+<h1>Danh sách góp ý</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Tạo góp ý mới</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Tiêu đề</th>
+            <th>Tên người dân</th>
+            <th>Loại</th>
+            <th>Trạng thái</th>
+            <th>Ngày tạo</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Title</td>
+                <td>@item.ResidentName</td>
+                <td>@item.Type</td>
+                <td>@item.Status</td>
+                <td>@item.CreatedAt</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.Id">Chi tiết</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Xóa</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
