@@ -1,6 +1,0 @@
-# Ignore build results
-Migrations/
-bin/
-obj/
-.vs/
-appsettings.Local.json
