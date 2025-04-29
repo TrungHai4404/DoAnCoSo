@@ -4,67 +4,60 @@
     ViewData["Title"] = "Chi tiết thông báo";
     Layout = "_LayoutAdmin";
 }
-
-<div class="content-wrapper">
-    <section class="content-header">
-        <h1>Chi tiết thông báo</h1>
-    </section>
-
-    <section class="content">
-        <div class="container-fluid">
-            <div class="card">
-                <div class="card-body">
-                    @if (TempData["ErrorMessage"] != null)
-                    {
-                        <div class="alert alert-danger" role="alert">
-                            <pre>@TempData["ErrorMessage"]</pre>
-                        </div>
-                    }
-                    @if (TempData["SuccessMessage"] != null)
-                    {
-                        <div class="alert alert-success" role="alert">
-                            @TempData["SuccessMessage"]
-                        </div>
-                    }
-
-                    <dl class="row">
-                        <dt class="col-sm-2">Tiêu đề</dt>
-                        <dd class="col-sm-10">@Html.DisplayFor(model => model.Title)</dd>
-
-                        <dt class="col-sm-2">Nội dung</dt>
-                        <dd class="col-sm-10">@Html.DisplayFor(model => model.Content)</dd>
-
-                        <dt class="col-sm-2">Loại thông báo</dt>
-                        <dd class="col-sm-10">@Html.DisplayFor(model => model.Type)</dd>
-
-                        <dt class="col-sm-2">Đối tượng</dt>
-                        <dd class="col-sm-10">@Html.DisplayFor(model => model.TargetAudience)</dd>
-
-                        <dt class="col-sm-2">Người gửi</dt>
-                        <dd class="col-sm-10">@ViewBag.SenderName</dd>
-
-                        <dt class="col-sm-2">Hình ảnh</dt>
-                        <dd class="col-sm-10">
-                            @if (!string.IsNullOrEmpty(Model.ImageUrl))
-                            {
-                                <img src="@Model.ImageUrl" alt="Hình ảnh thông báo" style="max-width: 300px; max-height: 200px; object-fit: cover; border-radius: 8px;" />
-                            }
-                            else
-                            {
-                                <span>Không có hình ảnh</span>
-                            }
-                        </dd>
-                    </dl>
-
-                    <div class="form-group">
-                        <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Chỉnh sửa</a>
-                        <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+<section class="content">
+    <div class="container-fluid">
+        <div class="card">
+            <div class="card-body">
+                @if (TempData["ErrorMessage"] != null)
+                {
+                    <div class="alert alert-danger" role="alert">
+                        <pre>@TempData["ErrorMessage"]</pre>
                     </div>
+                }
+                @if (TempData["SuccessMessage"] != null)
+                {
+                    <div class="alert alert-success" role="alert">
+                        @TempData["SuccessMessage"]
+                    </div>
+                }
+
+                <dl class="row">
+                    <dt class="col-sm-2">Tiêu đề</dt>
+                    <dd class="col-sm-10">@Html.DisplayFor(model => model.Title)</dd>
+
+                    <dt class="col-sm-2">Nội dung</dt>
+                    <dd class="col-sm-10">@Html.DisplayFor(model => model.Content)</dd>
+
+                    <dt class="col-sm-2">Loại thông báo</dt>
+                    <dd class="col-sm-10">@Html.DisplayFor(model => model.Type)</dd>
+
+                    <dt class="col-sm-2">Đối tượng</dt>
+                    <dd class="col-sm-10">@Html.DisplayFor(model => model.TargetAudience)</dd>
+
+                    <dt class="col-sm-2">Người gửi</dt>
+                    <dd class="col-sm-10">@ViewBag.SenderName</dd>
+
+                    <dt class="col-sm-2">Hình ảnh</dt>
+                    <dd class="col-sm-10">
+                        @if (!string.IsNullOrEmpty(Model.ImageUrl))
+                        {
+                            <img src="@Model.ImageUrl" alt="Hình ảnh thông báo" style="max-width: 300px; max-height: 200px; object-fit: cover; border-radius: 8px;" />
+                        }
+                        else
+                        {
+                            <span>Không có hình ảnh</span>
+                        }
+                    </dd>
+                </dl>
+
+                <div class="form-group">
+                    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Chỉnh sửa</a>
+                    <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
                 </div>
             </div>
         </div>
-    </section>
-</div>
+    </div>
+</section>
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
