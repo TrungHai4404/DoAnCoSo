@@ -1,0 +1,22 @@
+﻿@model QuanLyTruyenThong_TuVan.Models.Post
+
+@{
+    ViewData["Title"] = "Chi tiết bài viết";
+    Layout = "_LayoutAdmin"; // Sử dụng layout Admin
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="card">
+    <div class="card-header">
+        <h3 class="card-title">@Model.Title</h3>
+    </div>
+    <div class="card-body">
+        <p><strong>Ngày tạo:</strong> @Model.CreatedAt.ToString("dd/MM/yyyy")</p>
+        <p><strong>Người gửi:</strong> @Model.SenderName</p> <!-- Hiển thị tên người gửi -->
+        <p><strong>Nội dung:</strong></p>
+        <p>@Model.Content</p>
+    </div>
+</div>
+
+<a href="@Url.Action("Index", "Post", new { area = "Admin" })" class="btn btn-secondary">Quay lại</a>

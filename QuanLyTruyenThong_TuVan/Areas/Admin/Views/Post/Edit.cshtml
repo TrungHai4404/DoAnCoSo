@@ -1,0 +1,31 @@
+﻿@model QuanLyTruyenThong_TuVan.Models.Post
+
+@{
+    ViewData["Title"] = "Chỉnh sửa bài viết";
+    Layout = "_LayoutAdmin"; // Sử dụng layout Admin
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form asp-action="Edit" method="post">
+    <div class="form-group">
+        <label for="Title">Tiêu đề</label>
+        <input type="text" class="form-control" id="Title" name="Title" value="@Model.Title" required />
+    </div>
+
+    <div class="form-group">
+        <label for="Content">Nội dung</label>
+        <textarea class="form-control" id="Content" name="Content" rows="5" required>@Model.Content</textarea>
+    </div>
+
+    <!-- Trường để nhập tên người gửi -->
+    <div class="form-group">
+        <label for="SenderName">Người gửi</label>
+        <input type="text" class="form-control" id="SenderName" name="SenderName" value="@Model.SenderName" required />
+    </div>
+
+    <input type="hidden" name="Id" value="@Model.Id" />
+
+    <button type="submit" class="btn btn-primary">Lưu</button>
+    <a href="@Url.Action("Index", "Post", new { area = "Admin" })" class="btn btn-secondary">Hủy</a>
+</form>

@@ -1,0 +1,16 @@
+﻿@model QuanLyTruyenThong_TuVan.Models.Post
+
+@{
+    ViewData["Title"] = "Xóa bài viết";
+    Layout = "_LayoutAdmin";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>Bạn có chắc chắn muốn xóa bài viết "<strong>@Model.Title</strong>" không?</p>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" name="id" value="@Model.Id" />
+    <button type="submit" class="btn btn-danger">Xóa</button>
+    <a href="@Url.Action("Index")" class="btn btn-secondary">Hủy</a>
+</form>

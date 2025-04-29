@@ -1,0 +1,44 @@
+﻿@model IEnumerable<QuanLyTruyenThong_TuVan.Models.Post>
+
+@{
+    ViewData["Title"] = "Danh sách bài viết";
+    Layout = "_LayoutAdmin"; // Sử dụng layout Admin
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="card">
+    <div class="card-header">
+        <h3 class="card-title">Danh sách bài viết</h3>
+        <div class="card-tools">
+            <a asp-action="Create" class="btn btn-primary btn-sm">Thêm bài viết mới</a>
+        </div>
+    </div>
+    <div class="card-body table-responsive p-0">
+        <table class="table table-hover text-nowrap">
+            <thead>
+                <tr>
+                    <th>Tiêu đề</th>
+                    <th>Ngày tạo</th>
+                    <th>Người gửi</th>
+                    <th>Nội Dung</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Title</td>
+                        <td>@item.CreatedAt.ToString("dd/MM/yyyy")</td>
+                        <td>@item.SenderName</td> <!-- Hiển thị tên người gửi -->
+                        <td>
+                            <a asp-action="Detail" asp-route-id="@item.Id" class="btn btn-sm btn-info">Xem</a>
+                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning">Sửa</a>
+                            <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Xóa</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
