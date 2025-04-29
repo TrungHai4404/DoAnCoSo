@@ -21,7 +21,8 @@ namespace QuanLyTruyenThong_TuVan.Models
 
         public DateTime? SentAt { get; set; }
 
-        public int SenderId { get; set; }
+        public string SenderId { get; set; }
+
         public ApplicationResident Sender { get; set; }
 
         [StringLength(50)]

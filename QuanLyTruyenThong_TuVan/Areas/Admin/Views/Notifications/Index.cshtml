@@ -1,0 +1,60 @@
+﻿@model IEnumerable<QuanLyTruyenThong_TuVan.Models.Notification>
+
+@{
+    ViewData["Title"] = "Quản lý thông báo";
+    Layout = "_LayoutAdmin";
+}
+
+<div class="content-wrapper">
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                </div>
+                <div class="col-sm-6">
+                    <a asp-action="Create" class="btn btn-primary float-right">Tạo thông báo mới</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="container-fluid">
+            <div class="card">
+                <div class="card-body">
+                    <table id="notificationTable" class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>Tiêu đề</th>
+                                <th>Loại</th>
+                                <th>Đối tượng</th>
+                                <th>Ngày tạo</th>
+                                <th>Ngày gửi</th>
+                                <th>Người gửi</th>
+                                <th>Hành động</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@Html.DisplayFor(modelItem => item.Title)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.Type)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.TargetAudience)</td>
+                                    <td>@item.CreatedAt.ToString("dd/MM/yyyy HH:mm")</td>
+                                    <td>@(item.SentAt?.ToString("dd/MM/yyyy HH:mm") ?? "Chưa gửi")</td>
+                                    <td>@Html.DisplayFor(modelItem => item.Sender.FullName)</td>
+                                    <td>
+                                        <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm">Xem</a>
+                                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning">Sửa</a>
+                                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Xóa</a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
