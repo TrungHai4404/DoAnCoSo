@@ -1,0 +1,34 @@
+﻿@model QuanLyTruyenThong_TuVan.Models.Comment
+@{
+    Layout = "_LayoutAdmin";
+    ViewData["Title"] = "Chi tiết góp ý";
+}
+<h1>Chi tiết góp ý</h1>
+<div class="card mb-3">
+    <div class="card-body">
+        <h5>@Model.Title</h5>
+        <p><small>Gửi bởi @Model.ResidentName lúc @Model.CreatedAt:dd/MM/yyyy HH:mm</small></p>
+        <p>@Model.Content</p>
+        @if (!string.IsNullOrEmpty(Model.ImageUrl))
+        {
+            <img src="@Model.ImageUrl" class="img-fluid" />
+        }
+    </div>
+</div>
+
+<h3>Danh sách phản hồi</h3>
+@if (Model.Responses.Any())
+{
+    <ul class="list-group mb-3">
+        @foreach (var r in Model.Responses)
+        {
+            <li class="list-group-item">
+                <strong>@r.Resident.FullName:</strong> @r.TitleComment<br />
+                @r.Content<br />
+                <small>@r.CreatedAt:dd/MM/yyyy HH:mm</small>
+            </li>
+        }
+    </ul>
+}
+<a asp-area="Admin" asp-action="Respond" asp-route-id="@Model.Id" class="btn btn-primary">Thêm phản hồi</a>
+<a asp-area="Admin" asp-action="Index" class="btn btn-secondary">Quay lại</a>

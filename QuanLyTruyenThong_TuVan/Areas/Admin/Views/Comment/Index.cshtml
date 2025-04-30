@@ -1,0 +1,35 @@
+﻿@model IEnumerable<QuanLyTruyenThong_TuVan.Models.Comment>
+@{
+    Layout = "_LayoutAdmin";
+    ViewData["Title"] = "Quản lý góp ý";
+}
+<h1>Quản lý góp ý</h1>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Người gửi</th>
+            <th>Tiêu đề</th>
+            <th>Thời gian</th>
+            <th>#Phản hồi</th>
+            <th>Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var c in Model)
+        {
+            <tr>
+                <td>@c.Id</td>
+                <td>@c.ResidentName</td>
+                <td>@c.Title</td>
+                <td>@c.CreatedAt:dd/MM/yyyy HH:mm</td>
+                <td>@c.Responses.Count()</td>
+                <td>
+                    <a asp-area="Admin" asp-action="Details" asp-route-id="@c.Id">Xem</a> |
+                    <a asp-area="Admin" asp-action="Respond" asp-route-id="@c.Id">Phản hồi</a> |
+                    <a asp-area="Admin" asp-action="Delete" asp-route-id="@c.Id">Xóa</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

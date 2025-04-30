@@ -1,0 +1,9 @@
+﻿@model QuanLyTruyenThong_TuVan.Models.InboxMessage
+@{
+    ViewData["Title"] = "Chi tiết thư";
+}
+<h1>@Model.Title</h1>
+<p><small>@Model.CreatedAt:dd/MM/yyyy HH:mm</small></p>
+<hr />
+<p>@Model.Content</p>
+<a asp-controller="Message" asp-action="Index" class="btn btn-secondary">Quay lại</a>

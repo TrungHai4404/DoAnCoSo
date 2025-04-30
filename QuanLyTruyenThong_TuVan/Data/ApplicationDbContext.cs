@@ -14,6 +14,7 @@ namespace QuanLyTruyenThong_TuVan.Data
         public DbSet<Apartment> Apartments { get; set; }
         public DbSet<Comment> Comments { get; set; }
         public DbSet<Response> Responses { get; set; }
+        public DbSet<InboxMessage> InboxMessages { get; set; }
         public DbSet<Notification> Notifications { get; set; }
         public DbSet<New> News { get; set; }
         public DbSet<Vote> Votes { get; set; }

@@ -1,0 +1,25 @@
+﻿@model QuanLyTruyenThong_TuVan.Models.Comment
+@{
+    Layout = "_LayoutAdmin";
+    ViewData["Title"] = "Phản hồi góp ý";
+    var comment = ViewBag.Comment as QuanLyTruyenThong_TuVan.Models.Comment;
+    // Lấy lại giá trị đã nhập (nếu có lỗi)
+    var previous = ViewBag.ResponseContent as string ?? "";
+}
+
+<h1>Phản hồi cho: @comment.Title</h1>
+
+<form asp-area="Admin" asp-controller="Comment" asp-action="Respond" asp-route-id="@comment.Id" method="post">
+    @Html.AntiForgeryToken()
+    <div class="form-group">
+        <label for="responseContent">Nội dung phản hồi</label>
+        <textarea id="responseContent"
+                  name="responseContent"
+                  class="form-control"
+                  rows="5">@previous</textarea>
+        @Html.ValidationMessage("responseContent", "", new { @class = "text-danger" })
+    </div>
+    <button type="submit" class="btn btn-success">Gửi phản hồi</button>
+    <a asp-area="Admin" asp-controller="Comment" asp-action="Details" asp-route-id="@comment.Id"
+       class="btn btn-secondary">Hủy</a>
+</form>

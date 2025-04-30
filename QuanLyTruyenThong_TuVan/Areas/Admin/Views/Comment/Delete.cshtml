@@ -1,0 +1,14 @@
+﻿@model QuanLyTruyenThong_TuVan.Models.Comment
+@{
+    Layout = "_LayoutAdmin";
+    ViewData["Title"] = "Xóa góp ý";
+}
+<h1>Xóa góp ý</h1>
+<div class="alert alert-danger">
+    Bạn có chắc muốn xóa góp ý "<strong>@Model.Title</strong>"?
+</div>
+<form asp-area="Admin" asp-action="Delete" asp-route-id="@Model.Id" method="post">
+    @Html.AntiForgeryToken()
+    <button type="submit" class="btn btn-danger">Xóa</button>
+    <a asp-area="Admin" asp-action="Index" class="btn btn-secondary">Hủy</a>
+</form>

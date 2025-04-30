@@ -1,0 +1,28 @@
+﻿@model IEnumerable<QuanLyTruyenThong_TuVan.Models.InboxMessage>
+@{
+    ViewData["Title"] = "Hộp thư";
+}
+<h1>Hộp thư</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Thời gian</th>
+            <th>Tiêu đề</th>
+            <th>Trạng thái</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var m in Model)
+        {
+            <tr class="@(m.IsRead ? "" : "font-weight-bold")">
+                <td>@m.CreatedAt:dd/MM/yyyy HH:mm</td>
+                <td>@m.Title</td>
+                <td>@(m.IsRead ? "Đã đọc" : "Chưa đọc")</td>
+                <td>
+                    <a asp-controller="Message" asp-action="Details" asp-route-id="@m.Id">Xem</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
