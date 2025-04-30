@@ -1,29 +1,57 @@
-﻿@model QuanLyTruyenThong_TuVan.Models.Post
-
+﻿
+@model QuanLyTruyenThong_TuVan.Models.Post
 @{
-    ViewData["Title"] = "Thêm bài viết mới";
-    Layout = "_LayoutAdmin"; // Sử dụng layout Admin
+    Layout = "_LayoutAdmin";
+    ViewData["Title"] = "Tạo bài viết";
 }
+<h2>@ViewData["Title"]</h2>
 
-<h1>@ViewData["Title"]</h1>
-
-<form asp-action="Create" method="post">
+<form asp-area="Admin" asp-controller="Post" asp-action="Create" method="post" enctype="multipart/form-data">
     <div class="form-group">
-        <label for="Title">Tiêu đề</label>
-        <input type="text" class="form-control" id="Title" name="Title" required />
+        <label asp-for="Title"></label>
+        <input asp-for="Title" class="form-control" />
+        <span asp-validation-for="Title" class="text-danger"></span>
     </div>
-
     <div class="form-group">
-        <label for="Content">Nội dung</label>
-        <textarea class="form-control" id="Content" name="Content" rows="5" required></textarea>
+        <label asp-for="Content"></label>
+        <textarea asp-for="Content" class="form-control" rows="5"></textarea>
+        <span asp-validation-for="Content" class="text-danger"></span>
     </div>
-
-    <!-- Thêm trường để nhập tên người gửi -->
     <div class="form-group">
-        <label for="SenderName">Người gửi</label>
-        <input type="text" class="form-control" id="SenderName" name="SenderName" required />
+        <label asp-for="Topic"></label>
+        <select asp-for="Topic" class="form-control" asp-items="Html.GetEnumSelectList<PostTopic>()"></select>
+        <span asp-validation-for="Topic" class="text-danger"></span>
     </div>
-
-    <button type="submit" class="btn btn-primary">Lưu</button>
-    <a href="@Url.Action("Index", "Post", new { area = "Admin" })" class="btn btn-secondary">Hủy</a>
+    <div class="form-group">
+        <label asp-for="SenderId">Người gửi</label>
+        <select asp-for="SenderId" class="form-control" asp-items="ViewBag.Senders"></select>
+    </div>
+    <div class="form-group">
+        <label>Hình ảnh</label><br />
+        <img id="imgPreview" src='/images/placeholder.png' style="max-height:100px;margin-bottom:10px;" />
+        <input type="file" id="imageFile" name="imageFile" class="form-control-file" />
+    </div>
+    <button type="submit" class="btn btn-sm btn-info">
+        <i class="bi bi-save"></i> Lưu
+    </button>
+    <a asp-area="Admin" asp-controller="Post" asp-action="Index" class="btn btn-sm btn-secondary">
+        <i class="bi bi-x-circle"></i> Hủy
+    </a>
 </form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>
+        document.getElementById('imageFile').addEventListener('change', function (e) {
+            var file = e.target.files[0];
+            if (!file) return;
+            var reader = new FileReader();
+            reader.onload = function (evt) {
+                document.getElementById('imgPreview').src = evt.target.result;
+            };
+            reader.readAsDataURL(file);
+        });
+    </script>
+}

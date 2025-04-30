@@ -22,8 +22,6 @@ namespace QuanLyTruyenThong_TuVan.Data
         public DbSet<VoteOption> VoteOptions { get; set; }
         public DbSet<VoteResult> VoteResults { get; set; }
         public DbSet<ApplicationResident> ApplicationResidents { get; set; }
-
-        // Thêm DbSet cho Post
         public DbSet<Post> Posts { get; set; }
 
         // Cấu hình mối quan hệ trong OnModelCreating
@@ -62,8 +60,6 @@ namespace QuanLyTruyenThong_TuVan.Data
                 .HasForeignKey(r => r.ResidentId)
                 .OnDelete(DeleteBehavior.Restrict);
 
-            // Cấu hình mối quan hệ cho Post (nếu có)
-            // Ví dụ: nếu Post có liên kết với Resident (giống như Comment hoặc Response)
            
         }
     }

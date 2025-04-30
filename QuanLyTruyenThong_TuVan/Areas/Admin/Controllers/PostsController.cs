@@ -1,11 +1,14 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿// Areas/Admin/Controllers/PostController.cs
+using System;
+using System.IO;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using QuanLyTruyenThong_TuVan.Data;
 using QuanLyTruyenThong_TuVan.Models;
-using System.Linq;
-using System.Security.Claims;
-using System.Threading.Tasks;
 
 namespace QuanLyTruyenThong_TuVan.Areas.Admin.Controllers
 {
@@ -19,148 +22,155 @@ namespace QuanLyTruyenThong_TuVan.Areas.Admin.Controllers
             _context = context;
         }
 
-        // GET: Post
+        // GET: Admin/Post
         public async Task<IActionResult> Index()
         {
-            // Truy vấn danh sách bài viết và tên người gửi
             var posts = await _context.Posts
-                .Select(p => new Post
-                {
-                    Id = p.Id,
-                    Title = p.Title,
-                    Content = p.Content,
-                    CreatedAt = p.CreatedAt,
-                    SenderName = p.SenderName // Lấy thông tin SenderName
-                })
+                .Include(p => p.Sender)
+                .OrderByDescending(p => p.CreatedAt)
                 .ToListAsync();
-
-            return View(posts); // Trả về view với danh sách bài viết
+            return View(posts);
         }
 
+        // GET: Admin/Post/Create
         public IActionResult Create()
         {
-            return View(); // Trả về view tạo bài viết mới
+            PopulateSendersDropDown();
+            ViewBag.Topics = new SelectList(Enum.GetValues(typeof(PostTopic)));
+            return View();
         }
 
-        // POST: Post/Create
+        // POST: Admin/Post/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Title,Content,SenderName")] Post post)
+        public async Task<IActionResult> Create([Bind("Title,Content,SenderId,Topic")] Post post, IFormFile imageFile)
         {
             if (ModelState.IsValid)
             {
-                post.CreatedAt = DateTime.Now; // Thêm thời gian tạo bài viết
-
-                _context.Add(post); // Thêm bài viết vào DbContext
-                await _context.SaveChangesAsync(); // Lưu vào cơ sở dữ liệu
-
-                return RedirectToAction(nameof(Index)); // Quay lại danh sách bài viết
+                if (imageFile != null && imageFile.Length > 0)
+                {
+                    post.ImageUrl = await SaveImageAsync(imageFile);
+                }
+                _context.Add(post);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
             }
-
-            return View(post); // Nếu model không hợp lệ, trả về lại form tạo bài viết
+            PopulateSendersDropDown(post.SenderId);
+            ViewBag.Topics = new SelectList(Enum.GetValues(typeof(PostTopic)), post.Topic);
+            return View(post);
         }
-        // GET: Post/Edit/5
+
+        // GET: Admin/Post/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null)
-            {
-                return NotFound(); // Nếu không tìm thấy id, trả về lỗi
-            }
+            if (id == null) return NotFound();
 
-            var post = await _context.Posts.FindAsync(id); // Tìm bài viết theo id
-            if (post == null)
-            {
-                return NotFound(); // Nếu bài viết không tồn tại, trả về lỗi
-            }
+            var post = await _context.Posts.FindAsync(id);
+            if (post == null) return NotFound();
 
-            return View(post); // Trả về view để chỉnh sửa bài viết
+            PopulateSendersDropDown(post.SenderId);
+            ViewBag.Topics = new SelectList(Enum.GetValues(typeof(PostTopic)), post.Topic);
+            return View(post);
         }
 
-        // POST: Post/Edit/5
+        // POST: Admin/Post/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,Content,SenderName,CreatedAt")] Post post)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,Content,ImageUrl,CreatedAt,SenderId,Topic")] Post post, IFormFile imageFile)
         {
-            if (id != post.Id)
-            {
-                return NotFound(); // Nếu id không khớp, trả về lỗi
-            }
+            if (id != post.Id) return NotFound();
+            ModelState.Remove("ImageUrl");
 
             if (ModelState.IsValid)
             {
                 try
                 {
-                    _context.Update(post); // Cập nhật bài viết trong DbContext
-                    await _context.SaveChangesAsync(); // Lưu thay đổi vào cơ sở dữ liệu
+                    if (imageFile != null && imageFile.Length > 0)
+                    {
+                        var existing = await _context.Posts.AsNoTracking().FirstOrDefaultAsync(p => p.Id == id);
+                        if (!string.IsNullOrEmpty(existing.ImageUrl))
+                            DeleteImage(existing.ImageUrl);
+                        post.ImageUrl = await SaveImageAsync(imageFile);
+                    }
+                    _context.Update(post);
+                    await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!_context.Posts.Any(e => e.Id == post.Id))
-                    {
-                        return NotFound(); // Nếu không tìm thấy bài viết, trả về lỗi
-                    }
-                    else
-                    {
-                        throw; // Ném lại lỗi nếu có vấn đề khác
-                    }
+                    if (!_context.Posts.Any(e => e.Id == post.Id)) return NotFound();
+                    throw;
                 }
-                return RedirectToAction(nameof(Index)); // Quay lại danh sách bài viết
+                return RedirectToAction(nameof(Index));
             }
-
-            return View(post); // Nếu model không hợp lệ, trả về form chỉnh sửa bài viết
+            PopulateSendersDropDown(post.SenderId);
+            ViewBag.Topics = new SelectList(Enum.GetValues(typeof(PostTopic)), post.Topic);
+            return View(post);
         }
 
-        // GET: Post/Delete/5
+        // GET: Admin/Post/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null)
-            {
-                return NotFound(); // Nếu không tìm thấy id, trả về lỗi
-            }
+            if (id == null) return NotFound();
 
             var post = await _context.Posts
-                .FirstOrDefaultAsync(m => m.Id == id); // Tìm bài viết theo id
-            if (post == null)
-            {
-                return NotFound(); // Nếu bài viết không tồn tại, trả về lỗi
-            }
+                .Include(p => p.Sender)
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (post == null) return NotFound();
 
-            return View(post); // Trả về view xác nhận xóa bài viết
+            return View(post);
         }
 
-        // POST: Post/Delete/5
+        // POST: Admin/Post/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var post = await _context.Posts.FindAsync(id); // Tìm bài viết theo id
+            var post = await _context.Posts.FindAsync(id);
             if (post != null)
             {
-                _context.Posts.Remove(post); // Xóa bài viết khỏi DbContext
-                await _context.SaveChangesAsync(); // Lưu thay đổi vào cơ sở dữ liệu
+                if (!string.IsNullOrEmpty(post.ImageUrl))
+                    DeleteImage(post.ImageUrl);
+                _context.Posts.Remove(post);
+                await _context.SaveChangesAsync();
             }
-            return RedirectToAction(nameof(Index)); // Quay lại danh sách bài viết
+            return RedirectToAction(nameof(Index));
         }
 
-        public async Task<IActionResult> Detail(int? id)
+        // Helper methods
+        private void PopulateSendersDropDown(string selectedId = null)
+        {
+            ViewBag.Senders = new SelectList(
+                _context.Users.Select(u => new { u.Id, u.FullName }),
+                "Id", "FullName", selectedId);
+        }
+        private async Task<string> SaveImageAsync(IFormFile file)
+        {
+            var uploads = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images");
+            if (!Directory.Exists(uploads)) Directory.CreateDirectory(uploads);
+            var fileName = $"{Guid.NewGuid()}{Path.GetExtension(file.FileName)}";
+            var filePath = Path.Combine(uploads, fileName);
+            using (var stream = new FileStream(filePath, FileMode.Create))
+                await file.CopyToAsync(stream);
+            return $"/images/{fileName}";
+        }
+        private void DeleteImage(string imageUrl)
+        {
+            var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", imageUrl.TrimStart('/'));
+            if (System.IO.File.Exists(path))
+                System.IO.File.Delete(path);
+        }
+        public async Task<IActionResult> Display(int? id)
         {
             if (id == null)
-            {
-                return NotFound(); // Nếu không tìm thấy id, trả về lỗi
-            }
+                return NotFound();
 
-            // Tìm bài viết theo id mà không dùng Include (vì SenderName không phải là navigation property)
             var post = await _context.Posts
-                .Where(m => m.Id == id)
-                .FirstOrDefaultAsync(); // Trả về bài viết hoặc null nếu không tìm thấy
-
+                                     .Include(p => p.Sender)
+                                     .FirstOrDefaultAsync(p => p.Id == id);
             if (post == null)
-            {
-                return NotFound(); // Nếu bài viết không tồn tại, trả về lỗi
-            }
+                return NotFound();
 
-            return View(post); // Trả về view chi tiết bài viết
+            return View(post);
         }
-
     }
 }

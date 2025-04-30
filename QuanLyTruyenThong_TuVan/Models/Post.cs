@@ -1,4 +1,7 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿// Models/Post.cs
+using System;
+using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 
 namespace QuanLyTruyenThong_TuVan.Models
 {
@@ -6,17 +9,38 @@ namespace QuanLyTruyenThong_TuVan.Models
     {
         public int Id { get; set; }
 
-        [Required(ErrorMessage = "Tiêu đề bắt buộc.")]
-        [StringLength(100)]
+        [Required(ErrorMessage = "Tiêu đề không được để trống")]
+        [StringLength(255, ErrorMessage = "Tiêu đề tối đa 255 ký tự")]
         public string Title { get; set; }
 
-        [Required(ErrorMessage = "Nội dung bắt buộc.")]
+        [Required(ErrorMessage = "Nội dung không được để trống")]
         public string Content { get; set; }
 
+        [StringLength(255)]
+        [ValidateNever]
+        public string ImageUrl { get; set; }
+
+        [Display(Name = "Ngày tạo")]
         public DateTime CreatedAt { get; set; } = DateTime.Now;
 
+        [Display(Name = "Người gửi")]
+        public string SenderId { get; set; }
 
-        [Required(ErrorMessage = "Họ tên người gửi là bắt buộc.")]
-        public string SenderName { get; set; } // Trường họ tên người gửi
+        [ValidateNever]
+        public ApplicationResident Sender { get; set; }
+
+        [Required(ErrorMessage = "Chủ đề không được để trống")]
+        [Display(Name = "Chủ đề bài viết")]
+        public PostTopic Topic { get; set; }
+    }
+
+    public enum PostTopic
+    {
+        Technology,
+        Education,
+        Lifestyle,
+        News,
+        Opinion,
+        Others
     }
 }
