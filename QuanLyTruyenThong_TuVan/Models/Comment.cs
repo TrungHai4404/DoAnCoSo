@@ -21,8 +21,8 @@ namespace QuanLyTruyenThong_TuVan.Models
         [StringLength(255)]
         public string ImageUrl { get; set; }
 
-        [StringLength(50)]
-        public string Type { get; set; }
+        [Required]
+        public CommentType Type { get; set; }
 
         public DateTime CreatedAt { get; set; } = DateTime.Now;
 
@@ -39,5 +39,16 @@ namespace QuanLyTruyenThong_TuVan.Models
         Completed,
         Failed
     }
-
+    public enum CommentType
+    {
+        Hygiene_And_Environment,
+        Security_And_Safety,
+        Technical_And_Maintenance,
+        Shared_Amenities,
+        ServiceFees_And_FinancialMatters,
+        Rules_And_Regulations,
+        StaffAttitude_And_ManagementService,
+        Communication_And_Information,
+        Other
+    }
 }
