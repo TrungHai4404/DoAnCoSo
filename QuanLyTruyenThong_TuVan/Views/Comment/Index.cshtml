@@ -28,7 +28,7 @@
                 <td>@item.Title</td>
                 <td>@item.ResidentName</td>
                 <td>@item.Type</td>
-                <td>@item.Status</td>
+                <td>@item.Status.ToString()</td>
                 <td>@item.CreatedAt</td>
                 <td>
                     <a asp-action="Details" asp-route-id="@item.Id">Chi tiết</a> |

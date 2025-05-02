@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Authorization;
 using QuanLyTruyenThong_TuVan.Data;
 using Microsoft.Extensions.Logging;
 using System.Text;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace QuanLyTruyenThong_TuVan.Controllers
 {
@@ -67,6 +68,14 @@ namespace QuanLyTruyenThong_TuVan.Controllers
             {
                 ViewBag.ResidentName = user.FullName ?? user.UserName;
                 ViewBag.ResidentId = user.Id;
+                // Thêm danh sách CommentType vào ViewBag
+                ViewBag.CommentTypes = Enum.GetValues(typeof(CommentType))
+                    .Cast<CommentType>()
+                    .Select(e => new SelectListItem
+                    {
+                        Value = e.ToString(),
+                        Text = e.ToString().Replace("_", " ")
+                    }).ToList();
             }
             else
             {
@@ -98,7 +107,7 @@ namespace QuanLyTruyenThong_TuVan.Controllers
 
             comment.ResidentId = user.Id;
             comment.ResidentName = user.FullName ?? user.UserName;
-            comment.Status = "Đã gửi";
+            comment.Status = CommentStatus.Submitted;
             comment.CreatedAt = DateTime.Now;
 
             if (!ModelState.IsValid)
@@ -107,6 +116,14 @@ namespace QuanLyTruyenThong_TuVan.Controllers
                 _logger.LogWarning("ModelState invalid. Errors: {Errors}", string.Join("; ", errors));
                 ViewBag.ResidentName = user.FullName ?? user.UserName;
                 ViewBag.ResidentId = user.Id;
+                // Khôi phục danh sách CommentType khi ModelState không hợp lệ
+                ViewBag.CommentTypes = Enum.GetValues(typeof(CommentType))
+                    .Cast<CommentType>()
+                    .Select(e => new SelectListItem
+                    {
+                        Value = e.ToString(),
+                        Text = e.ToString().Replace("_", " ")
+                    }).ToList();
                 TempData["ErrorMessage"] = "Dữ liệu không hợp lệ. Vui lòng kiểm tra lại: " + string.Join("; ", errors);
                 return View(comment);
             }
@@ -148,6 +165,7 @@ namespace QuanLyTruyenThong_TuVan.Controllers
 
             return RedirectToAction(nameof(Index));
         }
+
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
