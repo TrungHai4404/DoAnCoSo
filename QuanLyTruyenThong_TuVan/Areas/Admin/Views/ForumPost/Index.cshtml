@@ -1,0 +1,97 @@
+﻿@model IEnumerable<QuanLyTruyenThong_TuVan.Models.ForumPost>
+
+@{
+    ViewData["Title"] = "Quản lý Forum Posts";
+    Layout = "_LayoutAdmin";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    <a asp-area="Admin" asp-controller="ForumPost" asp-action="Create" class="btn btn-primary">
+        Thêm mới
+    </a>
+</p>
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Chủ đề</th>
+            <th>Loại</th>
+            <th>Người đăng</th>
+            <th>Nội dung</th>
+            <th>Ngày tạo</th>
+            <th>Phê duyệt</th>
+            <th>Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var p in Model)
+        {
+            <tr>
+                <td>@p.Id</td>
+                <td>@p.TypeTopic.ToString().Replace('_', ' ')</td>
+                <td>@p.TypeTopic.ToString()</td>
+                <td>@p.Resident.FullName</td>
+                <td>@(p.Content.Length > 50 ? p.Content.Substring(0, 50) + "…" : p.Content)</td>
+                <td>@p.CreatedAt.ToString("dd/MM/yyyy HH:mm")</td>
+                <td>
+                    @if (p.IsApproved)
+                    {
+                        <span class="badge bg-success">Đã duyệt</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-secondary">Chưa duyệt</span>
+                    }
+                </td>
+                <td>
+                    <!-- Xem chi tiết -->
+                    <a asp-area="Admin"
+                       asp-controller="ForumPost"
+                       asp-action="Details"
+                       asp-route-id="@p.Id"
+                       class="btn btn-sm btn-info me-1">
+                        Xem
+                    </a>
+
+                    <!-- Toggle Duyệt/Hủy Duyệt -->
+                    <form asp-area="Admin"
+                          asp-controller="ForumPost"
+                          asp-action="ToggleApproval"
+                          asp-route-id="@p.Id"
+                          method="post"
+                          class="d-inline">
+                        <button type="submit"
+                                class="btn btn-sm @(p.IsApproved ? "btn-warning" : "btn-success") me-1">
+                            @(p.IsApproved ? "Hủy duyệt" : "Duyệt")
+                        </button>
+                    </form>
+
+                    <!-- Sửa -->
+                    <a asp-area="Admin"
+                       asp-controller="ForumPost"
+                       asp-action="Edit"
+                       asp-route-id="@p.Id"
+                       class="btn btn-sm btn-primary me-1">
+                        Sửa
+                    </a>
+
+                    <!-- Xóa -->
+                    <form asp-area="Admin"
+                          asp-controller="ForumPost"
+                          asp-action="Delete"
+                          asp-route-id="@p.Id"
+                          method="post"
+                          class="d-inline"
+                          onsubmit="return confirm('Bạn có chắc muốn xóa bài này?');">
+                        <button type="submit" class="btn btn-sm btn-danger">
+                            Xóa
+                        </button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

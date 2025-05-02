@@ -1,0 +1,72 @@
+﻿@model QuanLyTruyenThong_TuVan.Models.ForumPost
+@using Microsoft.AspNetCore.Mvc.Rendering
+
+@{
+    Layout = "_LayoutAdmin";
+    ViewData["Title"] = "Tạo bài đăng";
+    // Lấy SelectList đã đổ ở controller
+    var typeList = ViewData["TypeTopicList"] as SelectList;
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form asp-area="Admin" asp-controller="ForumPost" asp-action="Create"
+      method="post" enctype="multipart/form-data">
+    @Html.AntiForgeryToken()
+    <input type="hidden" asp-for="ResidentId" />
+    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+    <!-- Người gửi -->
+    <div class="form-group mb-3">
+        <label>Người gửi</label>
+        <input class="form-control" readonly value="@ViewData["ResidentFullName"]" />
+        <input type="hidden" asp-for="ResidentId" />
+    </div>
+
+    <!-- Dropdown TypeTopic -->
+    <div class="form-group mb-3">
+        <label asp-for="TypeTopic">Chủ đề</label>
+        <select asp-for="TypeTopic"
+                asp-items="@(typeList)"
+                class="form-control">
+            <option value="">-- Chọn chủ đề --</option>
+        </select>
+        <span asp-validation-for="TypeTopic" class="text-danger"></span>
+    </div>
+
+    <!-- Content -->
+    <div class="form-group mb-3">
+        <label asp-for="Content"></label>
+        <textarea asp-for="Content" rows="5" class="form-control"></textarea>
+        <span asp-validation-for="Content" class="text-danger"></span>
+    </div>
+
+    <!-- Image -->
+    <div class="form-group mb-3">
+        <label>Ảnh (tùy chọn)</label>
+        <input type="file" name="imageFile" accept="image/*" class="form-control-file" />
+        <img id="preview" src="#" style="max-width:200px; display:none; margin-top:10px;" />
+    </div>
+
+    <button type="submit" class="btn btn-success">Lưu</button>
+    <a asp-area="Admin" asp-controller="ForumPost" asp-action="Index"
+       class="btn btn-secondary ms-2">Hủy</a>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>
+        // Preview ảnh
+        const inp = document.querySelector('input[name="imageFile"]'),
+              prev= document.getElementById("preview");
+        inp.addEventListener("change", e => {
+          const f = e.target.files[0];
+          if (f) {
+            prev.src = URL.createObjectURL(f);
+            prev.style.display = "block";
+          } else prev.style.display = "none";
+        });
+    </script>
+}

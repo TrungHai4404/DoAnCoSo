@@ -1,0 +1,13 @@
+﻿@* Areas/Admin/Views/ForumPost/Delete.cshtml *@
+@model QuanLyTruyenThong_TuVan.Models.ForumPost
+@{
+    ViewData["Title"] = "Xóa ForumPost";
+    Layout = "_LayoutAdmin";
+}
+<h1>Xóa ForumPost</h1>
+<h3>Bạn có chắc muốn xóa bản ghi này?</h3>
+<form asp-area="Admin" asp-controller="ForumPost" asp-action="Delete" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Xóa</button>
+    <a asp-area="Admin" asp-controller="ForumPost" asp-action="Index" class="btn btn-secondary">Hủy</a>
+</form>

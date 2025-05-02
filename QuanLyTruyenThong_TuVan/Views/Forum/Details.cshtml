@@ -1,0 +1,39 @@
+﻿@model QuanLyTruyenThong_TuVan.Models.ForumPost
+
+@{
+    ViewData["Title"] = "Chi tiết bài đăng";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="card">
+    <div class="card-body">
+        <dl class="row">
+            <dt class="col-sm-3">Chủ đề</dt>
+            <dd class="col-sm-9">@Model.TypeTopic.ToString().Replace('_', ' ')</dd>
+
+            <dt class="col-sm-3">Người đăng</dt>
+            <dd class="col-sm-9">@Model.Resident.FullName</dd>
+
+            <dt class="col-sm-3">Nội dung</dt>
+            <dd class="col-sm-9">@Model.Content</dd>
+
+            <dt class="col-sm-3">Ảnh</dt>
+            <dd class="col-sm-9">
+                @if (!string.IsNullOrEmpty(Model.ImageUrl))
+                {
+                    <img src="@Model.ImageUrl" class="img-fluid" style="max-width:400px;" />
+                }
+                else
+                {
+                    <em>Chưa có ảnh</em>
+                }
+            </dd>
+
+            <dt class="col-sm-3">Ngày tạo</dt>
+            <dd class="col-sm-9">@Model.CreatedAt.ToString("dd/MM/yyyy HH:mm")</dd>
+        </dl>
+
+        <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+    </div>
+</div>
