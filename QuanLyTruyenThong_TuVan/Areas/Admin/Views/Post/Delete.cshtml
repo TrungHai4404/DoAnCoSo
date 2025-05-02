@@ -1,0 +1,20 @@
+﻿
+@model QuanLyTruyenThong_TuVan.Models.Post
+@{
+    Layout = "_LayoutAdmin";
+    ViewData["Title"] = "Xác nhận xóa";
+}
+<h2>@ViewData["Title"]</h2>
+<h4>@Model.Title</h4>
+<div class="alert alert-warning">
+    Bạn có chắc muốn xóa bài viết này?
+</div>
+<form asp-area="Admin" asp-controller="Post" asp-action="Delete" method="post">
+    <input asp-for="Id" type="hidden" />
+    <button type="submit" class="btn btn-sm btn-danger">
+        <i class="bi bi-trash"></i> Xóa
+    </button>
+    <a asp-area="Admin" asp-controller="Post" asp-action="Index" class="btn btn-sm btn-secondary">
+        <i class="bi bi-x-circle"></i> Hủy
+    </a>
+</form>
