@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\QuanLyTruyenThong_TuVan.props" />
+</Project>

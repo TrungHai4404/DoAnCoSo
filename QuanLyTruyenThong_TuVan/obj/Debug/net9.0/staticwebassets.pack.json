@@ -1,0 +1,1025 @@
+{
+  "Files": [
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\QuanLyTruyenThong_TuVan.bundle.scp.css",
+      "PackagePath": "staticwebassets\\QuanLyTruyenThong_TuVan.cnxdefc39e.bundle.scp.css"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\adminlte.css",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\adminlte.css"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\adminlte.css.map",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\adminlte.css.map"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\adminlte.min.css",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\adminlte.min.css"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\adminlte.min.css.map",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\adminlte.min.css.map"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\alt\\adminlte.components.css",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\alt\\adminlte.components.css"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\alt\\adminlte.components.css.map",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\alt\\adminlte.components.css.map"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\alt\\adminlte.components.min.css",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\alt\\adminlte.components.min.css"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\alt\\adminlte.components.min.css.map",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\alt\\adminlte.components.min.css.map"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\alt\\adminlte.core.css",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\alt\\adminlte.core.css"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\alt\\adminlte.core.css.map",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\alt\\adminlte.core.css.map"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\alt\\adminlte.core.min.css",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\alt\\adminlte.core.min.css"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\alt\\adminlte.core.min.css.map",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\alt\\adminlte.core.min.css.map"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\alt\\adminlte.extra-components.css",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\alt\\adminlte.extra-components.css"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\alt\\adminlte.extra-components.css.map",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\alt\\adminlte.extra-components.css.map"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\alt\\adminlte.extra-components.min.css",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\alt\\adminlte.extra-components.min.css"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\alt\\adminlte.extra-components.min.css.map",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\alt\\adminlte.extra-components.min.css.map"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\alt\\adminlte.light.css",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\alt\\adminlte.light.css"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\alt\\adminlte.light.css.map",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\alt\\adminlte.light.css.map"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\alt\\adminlte.light.min.css",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\alt\\adminlte.light.min.css"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\alt\\adminlte.light.min.css.map",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\alt\\adminlte.light.min.css.map"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\alt\\adminlte.pages.css",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\alt\\adminlte.pages.css"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\alt\\adminlte.pages.css.map",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\alt\\adminlte.pages.css.map"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\alt\\adminlte.pages.min.css",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\alt\\adminlte.pages.min.css"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\alt\\adminlte.pages.min.css.map",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\alt\\adminlte.pages.min.css.map"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\alt\\adminlte.plugins.css",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\alt\\adminlte.plugins.css"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\alt\\adminlte.plugins.css.map",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\alt\\adminlte.plugins.css.map"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\alt\\adminlte.plugins.min.css",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\alt\\adminlte.plugins.min.css"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\css\\alt\\adminlte.plugins.min.css.map",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\alt\\adminlte.plugins.min.css.map"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\img\\AdminLTELogo.png",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\img\\AdminLTELogo.png"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\img\\boxed-bg.jpg",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\img\\boxed-bg.jpg"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\img\\boxed-bg.png",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\img\\boxed-bg.png"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\img\\credit\\american-express.png",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\img\\credit\\american-express.png"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\img\\credit\\cirrus.png",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\img\\credit\\cirrus.png"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\img\\credit\\mastercard.png",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\img\\credit\\mastercard.png"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\img\\credit\\paypal.png",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\img\\credit\\paypal.png"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\img\\credit\\paypal2.png",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\img\\credit\\paypal2.png"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\img\\credit\\visa.png",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\img\\credit\\visa.png"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\js\\.eslintrc.json",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\js\\.eslintrc.json"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\js\\adminlte.js",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\js\\adminlte.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\js\\adminlte.js.map",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\js\\adminlte.js.map"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\js\\adminlte.min.js",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\js\\adminlte.min.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\js\\adminlte.min.js.map",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\js\\adminlte.min.js.map"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\js\\demo.js",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\js\\demo.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\js\\pages\\dashboard.js",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\js\\pages\\dashboard.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\js\\pages\\dashboard2.js",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\js\\pages\\dashboard2.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\dist\\js\\pages\\dashboard3.js",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\js\\pages\\dashboard3.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\bootstrap\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\bootstrap\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\bootstrap\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\bootstrap\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\bootstrap\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\bootstrap\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\bootstrap\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\bootstrap\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\bootstrap\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\bootstrap\\js\\bootstrap.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\bootstrap\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\bootstrap\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\bootstrap\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\bootstrap\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\bootstrap\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\bootstrap\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\css\\all.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\css\\all.css"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\css\\all.min.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\css\\all.min.css"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\css\\brands.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\css\\brands.css"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\css\\brands.min.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\css\\brands.min.css"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\css\\fontawesome.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\css\\fontawesome.css"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\css\\fontawesome.min.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\css\\fontawesome.min.css"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\css\\regular.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\css\\regular.css"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\css\\regular.min.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\css\\regular.min.css"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\css\\solid.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\css\\solid.css"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\css\\solid.min.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\css\\solid.min.css"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\css\\svg-with-js.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\css\\svg-with-js.css"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\css\\svg-with-js.min.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\css\\svg-with-js.min.css"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\css\\v4-shims.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\css\\v4-shims.css"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\css\\v4-shims.min.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\css\\v4-shims.min.css"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.eot"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.svg",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.svg"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.woff"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.eot"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.svg",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.svg"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.woff"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.eot"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.svg",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.svg"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.woff"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\LICENSE.txt"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales-all.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales-all.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales-all.min.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales-all.min.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\af.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\af.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\ar-dz.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\ar-dz.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\ar-kw.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\ar-kw.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\ar-ly.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\ar-ly.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\ar-ma.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\ar-ma.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\ar-sa.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\ar-sa.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\ar-tn.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\ar-tn.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\ar.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\ar.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\az.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\az.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\bg.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\bg.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\bn.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\bn.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\bs.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\bs.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\ca.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\ca.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\cs.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\cs.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\cy.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\cy.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\da.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\da.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\de-at.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\de-at.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\de.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\de.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\el.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\el.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\en-au.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\en-au.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\en-gb.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\en-gb.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\en-nz.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\en-nz.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\eo.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\eo.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\es-us.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\es-us.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\es.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\es.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\et.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\et.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\eu.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\eu.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\fa.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\fa.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\fi.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\fi.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\fr-ca.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\fr-ca.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\fr-ch.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\fr-ch.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\fr.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\fr.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\gl.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\gl.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\he.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\he.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\hi.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\hi.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\hr.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\hr.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\hu.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\hu.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\hy-am.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\hy-am.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\id.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\id.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\is.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\is.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\it.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\it.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\ja.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\ja.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\ka.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\ka.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\kk.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\kk.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\km.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\km.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\ko.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\ko.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\ku.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\ku.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\lb.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\lb.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\lt.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\lt.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\lv.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\lv.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\mk.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\mk.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\ms.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\ms.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\nb.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\nb.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\ne.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\ne.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\nl.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\nl.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\nn.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\nn.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\pl.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\pl.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\pt-br.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\pt-br.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\pt.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\pt.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\ro.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\ro.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\ru.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\ru.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\si-lk.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\si-lk.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\sk.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\sk.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\sl.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\sl.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\sm.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\sm.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\sq.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\sq.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\sr-cyrl.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\sr-cyrl.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\sr.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\sr.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\sv.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\sv.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\ta-in.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\ta-in.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\th.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\th.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\tr.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\tr.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\ug.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\ug.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\uk.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\uk.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\uz.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\uz.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\vi.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\vi.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\zh-cn.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\zh-cn.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\locales\\zh-tw.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\locales\\zh-tw.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\main.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\main.css"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\main.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\main.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\main.min.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\main.min.css"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\fullcalendar\\main.min.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fullcalendar\\main.min.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\jquery\\jquery.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\jquery\\jquery.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\jquery\\jquery.min.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\jquery\\jquery.min.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\jquery\\jquery.min.map",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\jquery\\jquery.min.map"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\jquery\\jquery.slim.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\jquery\\jquery.slim.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\jquery\\jquery.slim.min.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\jquery\\jquery.slim.min.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\adminlte\\plugins\\jquery\\jquery.slim.min.map",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\jquery\\jquery.slim.min.map"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\images\\21f30027-79c3-40c7-87c2-efd18295d279.jpg",
+      "PackagePath": "staticwebassets\\images\\21f30027-79c3-40c7-87c2-efd18295d279.jpg"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\images\\5937ce9d-8991-4958-a41e-4bceed3f5fc4.jpg",
+      "PackagePath": "staticwebassets\\images\\5937ce9d-8991-4958-a41e-4bceed3f5fc4.jpg"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\images\\61c02c34-6e6f-4f76-bfc0-7edac61d8c2c.jpg",
+      "PackagePath": "staticwebassets\\images\\61c02c34-6e6f-4f76-bfc0-7edac61d8c2c.jpg"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\images\\7991aa29-1ad7-46d8-8892-39f24af1c3cd.jpg",
+      "PackagePath": "staticwebassets\\images\\7991aa29-1ad7-46d8-8892-39f24af1c3cd.jpg"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\images\\9b717be4-2ec9-4b10-9dc9-5f76abe2eceb.jpg",
+      "PackagePath": "staticwebassets\\images\\9b717be4-2ec9-4b10-9dc9-5f76abe2eceb.jpg"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\images\\f75079e1-e350-4aff-a6fb-a19bc98970d9.jpg",
+      "PackagePath": "staticwebassets\\images\\f75079e1-e350-4aff-a6fb-a19bc98970d9.jpg"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\images\\images (1).jpg",
+      "PackagePath": "staticwebassets\\images\\images (1).jpg"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\images\\iphone14promax.jpg",
+      "PackagePath": "staticwebassets\\images\\iphone14promax.jpg"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\images\\iphone15.jpg",
+      "PackagePath": "staticwebassets\\images\\iphone15.jpg"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\images\\iphone16pro.jpg",
+      "PackagePath": "staticwebassets\\images\\iphone16pro.jpg"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\images\\lenovo.jpg",
+      "PackagePath": "staticwebassets\\images\\lenovo.jpg"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\images\\xiaomi14T.jpg",
+      "PackagePath": "staticwebassets\\images\\xiaomi14T.jpg"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.js"
+    },
+    {
+      "Id": "F:\\DACS\\DoAnCoSo\\QuanLyTruyenThong_TuVan\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.QuanLyTruyenThong_TuVan.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.QuanLyTruyenThong_TuVan.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.QuanLyTruyenThong_TuVan.props",
+      "PackagePath": "build\\QuanLyTruyenThong_TuVan.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.QuanLyTruyenThong_TuVan.props",
+      "PackagePath": "buildMultiTargeting\\QuanLyTruyenThong_TuVan.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.QuanLyTruyenThong_TuVan.props",
+      "PackagePath": "buildTransitive\\QuanLyTruyenThong_TuVan.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

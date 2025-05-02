@@ -216,5 +216,21 @@ namespace QuanLyTruyenThong_TuVan.Controllers
 
             return RedirectToAction(nameof(Index));
         }
+        // GET: Comment/Inbox
+        public async Task<IActionResult> Inbox()
+        {
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null)
+                return RedirectToAction("Login", "Account", new { area = "Identity" });
+
+            var myComments = await _context.Comments
+                .Where(c => c.ResidentId == user.Id)
+                .Include(c => c.Responses)
+                .OrderByDescending(c => c.CreatedAt)
+                .ToListAsync();
+
+            // Trả về view nằm ở Views/HopThu/Inbox.cshtml
+            return View("~/Views/HopThu/Inbox.cshtml", myComments);
+        }
     }
 }

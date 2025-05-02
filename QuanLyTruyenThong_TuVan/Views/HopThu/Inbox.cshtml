@@ -1,0 +1,46 @@
+﻿@* 2. Tạo View Views/Comment/Inbox.cshtml *@
+@model IEnumerable<QuanLyTruyenThong_TuVan.Models.Comment>
+
+@{
+    ViewBag.Title = "Hộp thư góp ý";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Tiêu đề</th>
+            <th>Ngày gửi</th>
+            <th>Trạng thái</th>
+            <th>Phản hồi mới</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var c in Model)
+        {
+            var hasNew = c.Responses.Any();
+            <tr>
+                <td>@c.Title</td>
+                <td>@c.CreatedAt.ToString("dd/MM/yyyy HH:mm")</td>
+                <td>@c.Status</td>
+                <td>
+                    @if (hasNew)
+                    {
+                        <span class="badge bg-success">@c.Responses.Count()</span>
+                    }
+                    else
+                    {
+                        <span class="text-muted">–</span>
+                    }
+                </td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@c.Id" class="btn btn-sm btn-primary">
+                        Xem chi tiết
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

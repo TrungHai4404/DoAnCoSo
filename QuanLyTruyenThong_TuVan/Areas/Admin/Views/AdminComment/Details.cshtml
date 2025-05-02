@@ -1,0 +1,79 @@
+﻿@* File: Areas/Admin/Views/AdminComment/Details.cshtml *@
+@using QuanLyTruyenThong_TuVan.Models
+@model Comment
+
+<h2>Chi tiết Góp ý</h2>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+}
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+}
+
+<div class="card mb-3">
+    <div class="card-header">
+        <strong>@Model.Title</strong>
+        <small>(@Model.CreatedAt:dd/MM/yyyy HH:mm)</small>
+    </div>
+    <div class="card-body">
+        <p>@Model.Content</p>
+        @if (!string.IsNullOrEmpty(Model.ImageUrl))
+        {
+            <img src="@Model.ImageUrl" class="img-fluid" />
+        }
+    </div>
+</div>
+
+<h3>Phản hồi</h3>
+@if (Model.Responses.Any())
+{
+    @foreach (var resp in Model.Responses.OrderByDescending(r => r.CreatedAt))
+    {
+        <div class="card mb-2">
+            <div class="card-body">
+                <strong>@resp.Resident.UserName</strong>
+                <small>@resp.CreatedAt:dd/MM/yyyy HH:mm</small>
+                <p>@resp.Content</p>
+            </div>
+        </div>
+    }
+}
+else
+{
+    <p><em>Chưa có phản hồi nào.</em></p>
+}
+
+<h3>Gửi phản hồi / Cập nhật trạng thái</h3>
+<form asp-area="Admin"
+      asp-controller="AdminComment"
+      asp-action="Respond"
+      method="post">
+    <input type="hidden" name="commentId" value="@Model.Id" />
+
+    <div class="form-group mb-2">
+        <label for="status">Trạng thái xử lý</label>
+        <select id="status" name="status" class="form-control" required>
+            @foreach (CommentStatus st in Enum.GetValues(typeof(CommentStatus)))
+            {
+                <option value="@st" selected="@(Model.Status == st)">
+                    @st.ToString().Replace('_', ' ')
+                </option>
+            }
+        </select>
+    </div>
+
+    <div class="form-group mb-2">
+        <label for="content">Nội dung phản hồi</label>
+        <textarea id="content"
+                  name="content"
+                  class="form-control"
+                  rows="4"
+                  placeholder="Nội dung phản hồi..."
+                  required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Gửi và Thông báo</button>
+</form>
