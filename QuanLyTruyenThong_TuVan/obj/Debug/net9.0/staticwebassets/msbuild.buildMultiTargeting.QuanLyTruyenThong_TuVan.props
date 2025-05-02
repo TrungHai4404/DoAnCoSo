@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\QuanLyTruyenThong_TuVan.props" />
+</Project>

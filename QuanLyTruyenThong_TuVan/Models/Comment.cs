@@ -26,11 +26,18 @@ namespace QuanLyTruyenThong_TuVan.Models
 
         public DateTime CreatedAt { get; set; } = DateTime.Now;
 
-        [StringLength(50)]
-        public string Status { get; set; }
+        [Required]
+        public CommentStatus Status { get; set; }
 
         // Quan hệ 1-n với Response
         public ICollection<Response> Responses { get; set; } = new List<Response>();
+    }
+    public enum CommentStatus
+    {
+        Submitted,
+        Processing,
+        Completed,
+        Failed
     }
 
 }

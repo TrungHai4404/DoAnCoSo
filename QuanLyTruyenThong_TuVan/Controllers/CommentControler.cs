@@ -98,7 +98,7 @@ namespace QuanLyTruyenThong_TuVan.Controllers
 
             comment.ResidentId = user.Id;
             comment.ResidentName = user.FullName ?? user.UserName;
-            comment.Status = "Đã gửi";
+            comment.Status = CommentStatus.Submitted;
             comment.CreatedAt = DateTime.Now;
 
             if (!ModelState.IsValid)
@@ -148,6 +148,7 @@ namespace QuanLyTruyenThong_TuVan.Controllers
 
             return RedirectToAction(nameof(Index));
         }
+
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
