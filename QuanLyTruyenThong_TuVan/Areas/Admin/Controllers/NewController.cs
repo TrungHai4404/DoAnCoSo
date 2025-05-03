@@ -25,10 +25,15 @@ namespace QuanLyTruyenThong_TuVan.Areas.Admin.Controllers {
         // GET: New/Create
         public IActionResult Create() {
             // Load danh sách người gửi
-            ViewBag.Senders = new SelectList(
-                _context.Users.Select(u => new { u.Id, u.FullName }).ToList(),
-                "Id", "FullName"
-            );
+            // Giả sử bạn xác định "Administrator" bằng Email, UserName hoặc Role
+            var adminUser = _context.Users
+                .Where(u => u.FullName == "Administrator") // Hoặc Username == "admin"
+                .Select(u => new { u.Id, u.FullName })
+                .FirstOrDefault();
+
+            ViewBag.Senders = new SelectList(new[] { adminUser }, "Id", "FullName", adminUser?.Id);
+
+
 
             // Load danh sách hình ảnh có sẵn trong thư mục
             var imageDirectory = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images");
@@ -90,10 +95,12 @@ namespace QuanLyTruyenThong_TuVan.Areas.Admin.Controllers {
             if (news == null) return NotFound();
 
             // Load danh sách người gửi (Senders) từ cơ sở dữ liệu
-            ViewBag.Senders = new SelectList(
-                _context.Users.Select(u => new { u.Id, u.FullName }).ToList(),
-                "Id", "FullName", news.SenderId // Chọn người gửi hiện tại
-            );
+            var adminUser = _context.Users
+                .Where(u => u.FullName == "Administrator") // Hoặc Username == "admin"
+                .Select(u => new { u.Id, u.FullName })
+                .FirstOrDefault();
+
+            ViewBag.Senders = new SelectList(new[] { adminUser }, "Id", "FullName", adminUser?.Id);
 
             return View(news);
         }
