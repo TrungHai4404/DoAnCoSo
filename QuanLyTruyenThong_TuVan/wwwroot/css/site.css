@@ -1,25 +1,80 @@
+<!--
 
+wwwroot/css/site.css -->
 body {
-    background-color: #f0f2f5;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f4f6f9;
 }
+
+.main-header.navbar {
+    background: linear-gradient(90deg, #1e3c72, #2a5298);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.main-header .nav-link {
+    color: #fff !important;
+    transition: background-color 0.3s;
+}
+
+    .main-header .nav-link:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 5px;
+    }
+
+.main-sidebar {
+    background: #222d32;
+}
+
+    .main-sidebar .nav-link {
+        color: #b8c7ce !important;
+        border-radius: 5px;
+        margin: 2px 5px;
+        transition: all 0.3s;
+    }
+
+        .main-sidebar .nav-link:hover, .main-sidebar .nav-link.active {
+            background-color: #1e3c72;
+            color: #fff !important;
+        }
 
 .main-content {
     padding: 20px;
+    min-height: calc(100vh - 150px);
 }
 
 .card {
     border-radius: 10px;
-    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
 }
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
 
 .post-box {
     background-color: #fff;
     padding: 15px;
     border-radius: 10px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.navbar-light {
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+.main-footer {
+    background: linear-gradient(90deg, #1e3c72, #2a5298);
+    color: #fff;
+    border-top: none;
+    padding: 10px 0;
+}
+
+    .main-footer a {
+        color: #a3bffa;
+        transition: color 0.3s;
+    }
+
+        .main-footer a:hover {
+            color: #fff;
+        }
+
+.badge-danger {
+    background-color: #e3342f;
 }

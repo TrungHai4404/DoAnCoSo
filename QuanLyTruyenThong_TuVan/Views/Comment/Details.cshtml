@@ -26,9 +26,9 @@
         <div class="row">
             <div class="col-sm-3 fw-semibold">Trạng thái:</div>
             <div class="col-sm-9">
-                <span class="badge @(Model.Status == CommentStatus.Completed ? "bg-success" :
-                                    Model.Status == CommentStatus.Processing ? "bg-warning text-dark" :
-                                    Model.Status == CommentStatus.Failed ? "bg-danger" :
+                <span class="badge @(Model.Status == CommentStatus.Hoàn_Thành ? "bg-success" :
+                                    Model.Status == CommentStatus.Đang_xử_lý ? "bg-warning text-dark" :
+                                    Model.Status == CommentStatus.Thất_Bại ? "bg-danger" :
                                     "bg-secondary")">
                     @Model.Status
                 </span>
