@@ -1,40 +1,51 @@
 ﻿@model IEnumerable<QuanLyTruyenThong_TuVan.Models.Comment>
 
 @{
-    ViewData["Title"] = "Danh sách góp ý";
+    ViewBag.Title = "Góp ý của tôi";
 }
 
-<h1>Danh sách góp ý</h1>
+<h2>@ViewBag.Title</h2>
 
-<p>
-    <a asp-action="Create" class="btn btn-primary">Tạo góp ý mới</a>
-</p>
+<div class="mb-4">
+    <a asp-action="Create" class="btn btn-primary">
+        <i class="bi bi-pencil-square me-1"></i> Tạo góp ý mới
+    </a>
+    <a asp-action="Inbox" class="btn btn-secondary ms-2">
+        <i class="bi bi-inbox me-1"></i> Hộp thư góp ý
+    </a>
+</div>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>Tiêu đề</th>
-            <th>Tên người dân</th>
-            <th>Loại</th>
-            <th>Trạng thái</th>
-            <th>Ngày tạo</th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
+@if (!Model.Any())
+{
+    <p><em>Bạn chưa gửi góp ý nào.</em></p>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
             <tr>
-                <td>@item.Title</td>
-                <td>@item.ResidentName</td>
-                <td>@item.Type</td>
-                <td>@item.Status.ToString()</td>
-                <td>@item.CreatedAt</td>
-                <td>
-                    <a asp-action="Details" asp-route-id="@item.Id">Chi tiết</a> |
-                    <a asp-action="Delete" asp-route-id="@item.Id">Xóa</a>
-                </td>
+                <th>Tiêu đề</th>
+                <th>Ngày gửi</th>
+                <th>Trạng thái</th>
+                <th>Phản hồi</th>
+                <th></th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var c in Model)
+            {
+                <tr>
+                    <td>@c.Title</td>
+                    <td>@c.CreatedAt.ToString("dd/MM/yyyy HH:mm")</td>
+                    <td>@c.Status</td>
+                    <td>@c.Responses.Count()</td>
+                    <td>
+                        <a asp-action="Details" asp-route-id="@c.Id" class="btn btn-sm btn-info">
+                            <i class="bi bi-eye"></i> Xem
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

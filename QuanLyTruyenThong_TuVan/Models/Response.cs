@@ -20,6 +20,9 @@ namespace QuanLyTruyenThong_TuVan.Models
         public string Content { get; set; }
 
         public DateTime CreatedAt { get; set; } = DateTime.Now;
+
+        // ---> thêm cột IsRead
+        public bool IsRead { get; set; } = false;
     }
 
 }

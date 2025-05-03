@@ -1,0 +1,45 @@
+﻿@* File: Areas/Admin/Views/AdminComment/Respond.cshtml *@
+@model QuanLyTruyenThong_TuVan.Models.Comment
+@using QuanLyTruyenThong_TuVan.Models
+
+<h2>Phản hồi góp ý: @Model.Title</h2>
+
+<div class="card mb-3">
+    <div class="card-body">
+        <p><strong>Nội dung gốc:</strong> @Model.Content</p>
+        <small>Người gửi: @Model.ResidentName — @Model.CreatedAt.ToString("dd/MM/yyyy HH:mm")</small>
+    </div>
+</div>
+
+<form asp-area="Admin"
+      asp-controller="AdminComment"
+      asp-action="Respond"
+      method="post">
+    <input type="hidden" name="commentId" value="@Model.Id" />
+
+    <div class="mb-3">
+        <label for="status" class="form-label">Trạng thái xử lý</label>
+        <select id="status" name="status" class="form-select" required>
+            @foreach (CommentStatus st in Enum.GetValues(typeof(CommentStatus)))
+            {
+                <option value="@st" selected="@(Model.Status == st)">
+                    @st.ToString().Replace('_', ' ')
+                </option>
+            }
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label for="content" class="form-label">Nội dung phản hồi</label>
+        <textarea id="content" name="content" class="form-control" rows="4" required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-success">Gửi phản hồi</button>
+    <a asp-area="Admin"
+       asp-controller="AdminComment"
+       asp-action="Details"
+       asp-route-id="@Model.Id"
+       class="btn btn-secondary ms-2">
+        Hủy
+    </a>
+</form>

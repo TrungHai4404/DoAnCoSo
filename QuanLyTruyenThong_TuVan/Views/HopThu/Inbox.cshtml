@@ -1,46 +1,51 @@
-﻿@* 2. Tạo View Views/Comment/Inbox.cshtml *@
-@model IEnumerable<QuanLyTruyenThong_TuVan.Models.Comment>
+﻿@model IEnumerable<QuanLyTruyenThong_TuVan.Models.Comment>
 
 @{
-    ViewBag.Title = "Hộp thư góp ý";
+    ViewBag.Title = "Hộp thư góp ý của tôi";
 }
 
 <h2>@ViewBag.Title</h2>
 
-<table class="table table-bordered">
-    <thead>
-        <tr>
-            <th>Tiêu đề</th>
-            <th>Ngày gửi</th>
-            <th>Trạng thái</th>
-            <th>Phản hồi mới</th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var c in Model)
-        {
-            var hasNew = c.Responses.Any();
+<div class="mb-4">
+    <a asp-controller="Home" asp-action="Index" class="btn btn-outline-secondary me-2">
+        ← Về Home
+    </a>
+</div>
+
+@if (!Model.Any())
+{
+    <p><em>Bạn chưa gửi góp ý nào.</em></p>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
             <tr>
-                <td>@c.Title</td>
-                <td>@c.CreatedAt.ToString("dd/MM/yyyy HH:mm")</td>
-                <td>@c.Status</td>
-                <td>
-                    @if (hasNew)
-                    {
-                        <span class="badge bg-success">@c.Responses.Count()</span>
-                    }
-                    else
-                    {
-                        <span class="text-muted">–</span>
-                    }
-                </td>
-                <td>
-                    <a asp-action="Details" asp-route-id="@c.Id" class="btn btn-sm btn-primary">
-                        Xem chi tiết
-                    </a>
-                </td>
+                <th>Tiêu đề</th>
+                <th>Ngày gửi</th>
+                <th>Trạng thái</th>
+                <th>Phản hồi</th>
+                <th>Hành động</th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var c in Model)
+            {
+                <tr>
+                    <td>@c.Title</td>
+                    <td>@c.CreatedAt.ToString("dd/MM/yyyy HH:mm")</td>
+                    <td>@c.Status</td>
+                    <td>@c.Responses.Count()</td>
+                    <td>
+                        <a asp-controller="Comment"
+                           asp-action="Details"
+                           asp-route-id="@c.Id"
+                           class="btn btn-sm btn-info">
+                            Xem chi tiết
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
