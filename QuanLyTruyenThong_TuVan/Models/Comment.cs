@@ -32,10 +32,10 @@ namespace QuanLyTruyenThong_TuVan.Models
     }
     public enum CommentStatus
     {
-        Submitted,
-        Processing,
-        Completed,
-        Failed
+        Đã_Gửi,
+        Đang_xử_lý,
+        Hoàn_Thành,
+        Thất_Bại
     }
     public enum CommentType
     {

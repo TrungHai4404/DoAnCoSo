@@ -107,7 +107,7 @@ namespace QuanLyTruyenThong_TuVan.Controllers
 
             comment.ResidentId = user.Id;
             comment.ResidentName = user.FullName ?? user.UserName;
-            comment.Status = CommentStatus.Submitted;
+            comment.Status = CommentStatus.Đã_Gửi;
             comment.CreatedAt = DateTime.Now;
 
             if (!ModelState.IsValid)

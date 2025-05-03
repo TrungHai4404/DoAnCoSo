@@ -27,16 +27,16 @@ namespace QuanLyTruyenThong_TuVan.Models {
         public Status TrangThai { get; set; }
     }
     public enum Category {
-        Notifications,
-        fire,
-        Event,
-        Promotion,
-        Update,
-        Announcement
+        Thông_Báo,
+        Cháy_Nổ,
+        Sự_Kiện,
+        Khuyến_Mãi,
+        Nâng_Cấp,
+        Khoa_Học
     }
     public enum Status {
-        active,
-        draft,
-        close
+        Hoạt_động,
+        Nháp,
+        Kết_thúc
     }
 }
