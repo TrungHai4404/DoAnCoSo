@@ -38,7 +38,7 @@
                 <a class="nav-link" href="/Post/Index"><i class="fas fa-pen"></i> Bài Viết</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/Feedback/Index"><i class="fas fa-comment"></i> Góp Ý</a>
+                    <a class="nav-link" asp-area="" asp-controller="Comment" asp-action="Index" ><i class="fas fa-comment"></i> Góp Ý</a>
             </li>
             <li class="nav-item">
                     <partial name="_LoginPartial" />
@@ -54,6 +54,12 @@
         <div class="sidebar">
             <nav class="mt-2">
                 <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu">
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <li class="nav-item">
+                                <a href="/Admin/Home" class="nav-link"><i class="nav-icon fas fa-tachometer-alt"></i><p>Dashboard</p></a>
+                            </li>
+                        }
                     <li class="nav-item">
                         <a href="/Home/Index" class="nav-link"><i class="nav-icon fas fa-home"></i><p>Trang Chủ</p></a>
                     </li>
@@ -74,7 +80,7 @@
                             <button id="logout" type="submit" class="nav-link btn btn-link text-dark border-0">Logout</button>
                         </form>
                     </li>
-
+                    
                 </ul>
             </nav>
         </div>

@@ -5,8 +5,6 @@ namespace QuanLyTruyenThong_TuVan.Models
     public class Comment
     {
         public int Id { get; set; }
-
-
         public string ResidentId { get; set; }
         public ApplicationResident Resident { get; set; }
 
