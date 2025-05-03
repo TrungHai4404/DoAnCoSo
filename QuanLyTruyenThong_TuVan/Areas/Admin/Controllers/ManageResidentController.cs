@@ -43,7 +43,7 @@ namespace QuanLyTruyenThong_TuVan.Controllers
         // POST: Admin/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(string email, string password, string fullName,string gender, int ApartmentId, string[] selectedRoles) // Thêm selectedRoles
+        public async Task<IActionResult> Create(string email, string password, string fullName,string gender, int? ApartmentId, string[] selectedRoles) // Thêm selectedRoles
         {
             if (ModelState.IsValid)
             {
