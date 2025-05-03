@@ -1,8 +1,139 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿<!-- Views/Home/Index.cshtml -->
+@using QuanLyTruyenThong_TuVan.Models
+@using Microsoft.AspNetCore.Identity
+@inject UserManager<ApplicationResident> _userManager
+@model dynamic
+
+@{
+    ViewData["Title"] = "Trang Chủ Cư Dân";
+    var user = await _userManager.GetUserAsync(User);
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container-fluid">
+    <div class="row">
+        <!-- Main Content (Post Area) -->
+        <div class="col-lg-8 col-md-12">
+            <!-- Post Creation Box -->
+            @if (User.Identity.IsAuthenticated)
+            {
+                <div class="card post-box mb-4">
+                    <div class="card-body">
+                        <form asp-action="CreatePost" asp-controller="Post" method="post">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="https://via.placeholder.com/40" class="rounded-circle me-2" alt="Avatar" />
+                                <h6 class="mb-0">@user?.UserName</h6>
+                            </div>
+                            <textarea class="form-control mb-3" rows="3" placeholder="Bạn đang nghĩ gì?" name="Content" required></textarea>
+                            <div class="d-flex justify-content-end">
+                                <button type="submit" class="btn btn-primary">Đăng</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            }
+            else
+            {
+                <div class="card post-box mb-4">
+                    <div class="card-body text-center">
+                        <p>Vui lòng <a asp-area="Identity" asp-page="/Account/Login">đăng nhập</a> để đăng bài viết.</p>
+                    </div>
+                </div>
+            }
+
+            <!-- Post List -->
+            <div class="card mb-4">
+                <div class="card-body">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="https://via.placeholder.com/40" class="rounded-circle me-2" alt="Avatar" />
+                        <div>
+                            <h6 class="mb-0">Nguyễn Văn A</h6>
+                            <small class="text-muted">2 giờ trước</small>
+                        </div>
+                    </div>
+                    <p>Chào mọi người, hôm nay có ai tham gia sự kiện cộng đồng không?</p>
+                    <div class="d-flex justify-content-between">
+                        <a href="#" class="text-muted"><i class="fas fa-thumbs-up"></i> 12 Thích</a>
+                        <a href="#" class="text-muted"><i class="fas fa-comment"></i> 5 Bình luận</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="https://via.placeholder.com/40" class="rounded-circle me-2" alt="Avatar" />
+                        <div>
+                            <h6 class="mb-0">Trần Thị B</h6>
+                            <small class="text-muted">1 ngày trước</small>
+                        </div>
+                    </div>
+                    <p>Có ai biết lịch cắt điện tuần này không ạ? Cảm ơn mọi người!</p>
+                    <div class="d-flex justify-content-between">
+                        <a href="#" class="text-muted"><i class="fas fa-thumbs-up"></i> 8 Thích</a>
+                        <a href="#" class="text-muted"><i class="fas fa-comment"></i> 3 Bình luận</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sidebar Widgets -->
+        <div class="col-lg-4 col-md-12">
+            <!-- Notifications Widget -->
+            <div class="card mb-4">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0"><i class="fas fa-bell me-2"></i>Thông Báo</h5>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="/Notification/Index" class="text-decoration-none">
+                                <strong>Cắt nước:</strong> Từ 22h ngày 02/05/2025 đến 6h ngày 03/05/2025.
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/Notification/Index" class="text-decoration-none">
+                                <strong>Bảo trì thang máy:</strong> Ngày 04/05/2025.
+                            </a>
+                        </li>
+                    </ul>
+                    editorialization: false
+                    <a href="/Notification/Index" class="btn btn-link">Xem tất cả thông báo</a>
+                </div>
+            </div>
+
+            <!-- Feedback Widget -->
+            <div class="card mt-4">
+                <div class="card-header bg-secondary text-white">
+                    <h5 class="mb-0"><i class="fas fa-comment me-2"></i>Góp Ý</h5>
+                </div>
+                <div class="card-body">
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <form asp-action="Create" asp-controller="Comment" method="post">
+                            <textarea class="form-control mb-3" rows="3" placeholder="Góp ý của bạn..." name="Content" required></textarea>
+                            <div class="d-flex justify-content-end">
+                                <button type="submit" class="btn btn-secondary">Gửi</button>
+                            </div>
+                        </form>
+                    }
+                    else
+                    {
+                        <p class="text-center">Vui lòng <a asp-area="Identity" asp-page="/Account/Login">đăng nhập</a> để gửi góp ý.</p>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            // Handle like button click (example)
+            $('.like-btn').click(function (e) {
+                e.preventDefault();
+                // Add AJAX call to update like count
+                console.log('Like clicked');
+            });
+        });
+    </script>
+}
