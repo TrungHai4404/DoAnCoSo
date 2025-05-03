@@ -1,0 +1,67 @@
+﻿@model QuanLyTruyenThong_TuVan.Models.ForumPost
+
+@{
+    ViewData["Title"] = "Chi tiết bài đăng";
+    Layout = "_LayoutAdmin";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="card mb-4">
+    <div class="card-body">
+        <dl class="row">
+            <dt class="col-sm-3">ID</dt>
+            <dd class="col-sm-9">@Model.Id</dd>
+
+            <dt class="col-sm-3">Chủ đề</dt>
+            <dd class="col-sm-9">
+                @* Nếu bạn dùng enum TypeTopic *@
+                @Model.TypeTopic.ToString().Replace('_', ' ')
+                @* Nếu bạn vẫn có navigation Forum: @Model.Forum?.TypeTopic.Replace('_',' ') *@
+            </dd>
+
+            <dt class="col-sm-3">Người đăng</dt>
+            <dd class="col-sm-9">@Model.Resident.FullName</dd>
+
+            <dt class="col-sm-3">Nội dung</dt>
+            <dd class="col-sm-9">@Model.Content</dd>
+
+            <dt class="col-sm-3">Ảnh</dt>
+            <dd class="col-sm-9">
+                @if (!string.IsNullOrEmpty(Model.ImageUrl))
+                {
+                    <img src="@Model.ImageUrl" class="img-fluid" style="max-width:400px;" />
+                }
+                else
+                {
+                    <em>Chưa có ảnh</em>
+                }
+            </dd>
+
+            <dt class="col-sm-3">Ngày tạo</dt>
+            <dd class="col-sm-9">
+                @Model.CreatedAt.ToString("dd/MM/yyyy HH:mm")
+            </dd>
+
+            <dt class="col-sm-3">Trạng thái duyệt</dt>
+            <dd class="col-sm-9">
+                @if (Model.IsApproved)
+                {
+                    <span class="badge bg-success">Đã duyệt</span>
+                }
+                else
+                {
+                    <span class="badge bg-secondary">Chưa duyệt</span>
+                }
+            </dd>
+        </dl>
+
+        <div>
+            <a asp-area="Admin" asp-controller="ForumPost" asp-action="Index" class="btn btn-secondary">
+                Quay lại
+            </a>
+            <a asp-area="Admin" asp-controller="ForumPost" asp-action="Edit" asp-route-id="@Model.Id"
+               class="btn btn-primary ms-2">Sửa</a>
+        </div>
+    </div>
+</div>

@@ -1,8 +1,9 @@
-﻿// Areas/Admin/Controllers/PostController.cs
-using System;
+﻿using System;
 using System.IO;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -13,164 +14,184 @@ using QuanLyTruyenThong_TuVan.Models;
 namespace QuanLyTruyenThong_TuVan.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    public class PostController : Controller
+    public class ForumPostController : Controller
     {
-        private readonly ApplicationDbContext _context;
+        private readonly ApplicationDbContext _db;
+        private readonly IWebHostEnvironment _env;
 
-        public PostController(ApplicationDbContext context)
+        public ForumPostController(ApplicationDbContext db, IWebHostEnvironment env)
         {
-            _context = context;
+            _db = db;
+            _env = env;
         }
 
-        // GET: Admin/Post
+        // helper build dropdown from enum
+        private SelectList GetTypeTopicList(TypeTopic? selected = null)
+        {
+            var items = Enum.GetValues(typeof(TypeTopic))
+                            .Cast<TypeTopic>()
+                            .Select(t => new SelectListItem
+                            {
+                                Value = ((int)t).ToString(),
+                                Text = t.ToString().Replace('_', ' '),
+                                Selected = selected.HasValue && selected.Value == t
+                            });
+            return new SelectList(items, "Value", "Text",
+                                  selected.HasValue ? (int)selected.Value : (int?)null);
+        }
+
+        // GET: Admin/ForumPost
         public async Task<IActionResult> Index()
         {
-            var posts = await _context.Posts
-                .Include(p => p.Sender)
-                .OrderByDescending(p => p.CreatedAt)
-                .ToListAsync();
+            var posts = await _db.ForumPosts
+                                 .Include(fp => fp.Resident)
+                                 .OrderByDescending(fp => fp.CreatedAt)
+                                 .ToListAsync();
             return View(posts);
         }
 
-        // GET: Admin/Post/Create
+        // GET: Admin/ForumPost/Details/5
+        public async Task<IActionResult> Details(int id)
+        {
+            var post = await _db.ForumPosts
+                                .Include(fp => fp.Resident)
+                                .FirstOrDefaultAsync(fp => fp.Id == id);
+            if (post == null) return NotFound();
+            return View(post);
+        }
+
+        // GET: Admin/ForumPost/Create
         public IActionResult Create()
         {
-            PopulateSendersDropDown();
-            ViewBag.Topics = new SelectList(Enum.GetValues(typeof(PostTopic)));
-            return View();
+            ViewData["TypeTopicList"] = GetTypeTopicList();
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier)!;
+            var resident = _db.ApplicationResident.Find(userId);
+            ViewData["ResidentFullName"] = resident?.FullName;
+            return View(new ForumPost { ResidentId = userId });
         }
 
-        // POST: Admin/Post/Create
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Title,Content,SenderId,Topic")] Post post, IFormFile imageFile)
+        // POST: Admin/ForumPost/Create
+        [HttpPost, ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create(ForumPost model, IFormFile? imageFile)
         {
-            if (ModelState.IsValid)
+            // enforce current user
+            model.ResidentId = User.FindFirstValue(ClaimTypes.NameIdentifier)!;
+            ModelState.Remove(nameof(model.Resident));
+            ModelState.Remove(nameof(model.Forum));
+
+            if (imageFile?.Length > 0)
+                model.ImageUrl = await SaveImageAsync(imageFile);
+
+            if (!ModelState.IsValid)
             {
-                if (imageFile != null && imageFile.Length > 0)
-                {
-                    post.ImageUrl = await SaveImageAsync(imageFile);
-                }
-                _context.Add(post);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                ViewData["TypeTopicList"] = GetTypeTopicList(model.TypeTopic);
+                var res = _db.ApplicationResident.Find(model.ResidentId);
+                ViewData["ResidentFullName"] = res?.FullName;
+                return View(model);
             }
-            PopulateSendersDropDown(post.SenderId);
-            ViewBag.Topics = new SelectList(Enum.GetValues(typeof(PostTopic)), post.Topic);
-            return View(post);
+
+            // create Forum record for FK
+            var forum = new Forum { TypeTopic = model.TypeTopic };
+            _db.Forums.Add(forum);
+            await _db.SaveChangesAsync();
+
+            model.TopicId = forum.Id;
+            model.CreatedAt = DateTime.Now;
+            model.IsApproved = false;
+            _db.ForumPosts.Add(model);
+            await _db.SaveChangesAsync();
+
+            return RedirectToAction(nameof(Index));
         }
 
-        // GET: Admin/Post/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        // GET: Admin/ForumPost/Edit/5
+        public async Task<IActionResult> Edit(int id)
         {
-            if (id == null) return NotFound();
-
-            var post = await _context.Posts.FindAsync(id);
+            var post = await _db.ForumPosts.FindAsync(id);
             if (post == null) return NotFound();
 
-            PopulateSendersDropDown(post.SenderId);
-            ViewBag.Topics = new SelectList(Enum.GetValues(typeof(PostTopic)), post.Topic);
+            ViewData["TypeTopicList"] = GetTypeTopicList(post.TypeTopic);
+            var res = _db.ApplicationResident.Find(post.ResidentId);
+            ViewData["ResidentFullName"] = res?.FullName;
             return View(post);
         }
 
-        // POST: Admin/Post/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,Content,ImageUrl,CreatedAt,SenderId,Topic")] Post post, IFormFile imageFile)
+        // POST: Admin/ForumPost/Edit/5
+        [HttpPost, ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(int id, ForumPost model, IFormFile? imageFile)
         {
-            if (id != post.Id) return NotFound();
-            ModelState.Remove("ImageUrl");
+            if (id != model.Id) return BadRequest();
+            ModelState.Remove(nameof(model.Resident));
+            ModelState.Remove(nameof(model.Forum));
 
-            if (ModelState.IsValid)
+            if (imageFile?.Length > 0)
+                model.ImageUrl = await SaveImageAsync(imageFile);
+            else
+                model.ImageUrl = (await _db.ForumPosts.AsNoTracking()
+                    .FirstAsync(fp => fp.Id == id)).ImageUrl;
+
+            if (!ModelState.IsValid)
             {
-                try
-                {
-                    if (imageFile != null && imageFile.Length > 0)
-                    {
-                        var existing = await _context.Posts.AsNoTracking().FirstOrDefaultAsync(p => p.Id == id);
-                        if (!string.IsNullOrEmpty(existing.ImageUrl))
-                            DeleteImage(existing.ImageUrl);
-                        post.ImageUrl = await SaveImageAsync(imageFile);
-                    }
-                    _context.Update(post);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!_context.Posts.Any(e => e.Id == post.Id)) return NotFound();
-                    throw;
-                }
-                return RedirectToAction(nameof(Index));
+                ViewData["TypeTopicList"] = GetTypeTopicList(model.TypeTopic);
+                var res = _db.ApplicationResident.Find(model.ResidentId);
+                ViewData["ResidentFullName"] = res?.FullName;
+                return View(model);
             }
-            PopulateSendersDropDown(post.SenderId);
-            ViewBag.Topics = new SelectList(Enum.GetValues(typeof(PostTopic)), post.Topic);
-            return View(post);
+
+            _db.ForumPosts.Update(model);
+            await _db.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
         }
 
-        // GET: Admin/Post/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        // POST: Admin/ForumPost/ToggleApproval/5
+        [HttpPost, ValidateAntiForgeryToken]
+        public async Task<IActionResult> ToggleApproval(int id)
         {
-            if (id == null) return NotFound();
-
-            var post = await _context.Posts
-                .Include(p => p.Sender)
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (post == null) return NotFound();
-
-            return View(post);
-        }
-
-        // POST: Admin/Post/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            var post = await _context.Posts.FindAsync(id);
+            var post = await _db.ForumPosts.FindAsync(id);
             if (post != null)
             {
-                if (!string.IsNullOrEmpty(post.ImageUrl))
-                    DeleteImage(post.ImageUrl);
-                _context.Posts.Remove(post);
-                await _context.SaveChangesAsync();
+                post.IsApproved = !post.IsApproved;
+                _db.ForumPosts.Update(post);
+                await _db.SaveChangesAsync();
             }
             return RedirectToAction(nameof(Index));
         }
 
-        // Helper methods
-        private void PopulateSendersDropDown(string selectedId = null)
+        // GET: Admin/ForumPost/Delete/5
+        public async Task<IActionResult> Delete(int id)
         {
-            ViewBag.Senders = new SelectList(
-                _context.Users.Select(u => new { u.Id, u.FullName }),
-                "Id", "FullName", selectedId);
+            var post = await _db.ForumPosts
+                                .Include(fp => fp.Resident)
+                                .FirstOrDefaultAsync(fp => fp.Id == id);
+            if (post == null) return NotFound();
+            return View(post);
         }
+
+        // POST: Admin/ForumPost/Delete/5
+        [HttpPost, ActionName("Delete"), ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            var post = await _db.ForumPosts.FindAsync(id);
+            if (post != null)
+            {
+                _db.ForumPosts.Remove(post);
+                await _db.SaveChangesAsync();
+            }
+            return RedirectToAction(nameof(Index));
+        }
+
+        // helper: save uploaded image
         private async Task<string> SaveImageAsync(IFormFile file)
         {
-            var uploads = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images");
-            if (!Directory.Exists(uploads)) Directory.CreateDirectory(uploads);
-            var fileName = $"{Guid.NewGuid()}{Path.GetExtension(file.FileName)}";
-            var filePath = Path.Combine(uploads, fileName);
-            using (var stream = new FileStream(filePath, FileMode.Create))
-                await file.CopyToAsync(stream);
-            return $"/images/{fileName}";
-        }
-        private void DeleteImage(string imageUrl)
-        {
-            var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", imageUrl.TrimStart('/'));
-            if (System.IO.File.Exists(path))
-                System.IO.File.Delete(path);
-        }
-        public async Task<IActionResult> Display(int? id)
-        {
-            if (id == null)
-                return NotFound();
+            var uploads = Path.Combine(_env.WebRootPath, "uploads");
+            Directory.CreateDirectory(uploads);
 
-            var post = await _context.Posts
-                                     .Include(p => p.Sender)
-                                     .FirstOrDefaultAsync(p => p.Id == id);
-            if (post == null)
-                return NotFound();
+            var fn = $"{Guid.NewGuid():N}{Path.GetExtension(file.FileName)}";
+            var path = Path.Combine(uploads, fn);
+            await using var stream = new FileStream(path, FileMode.Create);
+            await file.CopyToAsync(stream);
 
-            return View(post);
+            return $"/uploads/{fn}";
         }
     }
 }

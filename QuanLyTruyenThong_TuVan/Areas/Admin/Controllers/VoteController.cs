@@ -289,7 +289,7 @@ namespace QuanLyTruyenThong_TuVan.Areas.Admin.Controllers
                 return RedirectToAction("Index", "Home");
             }
 
-            var resident = await _context.ApplicationResidents
+            var resident = await _context.ApplicationResident
                 .FirstOrDefaultAsync(r => r.UserName == User.Identity.Name);
             if (resident == null)
             {
@@ -356,7 +356,7 @@ namespace QuanLyTruyenThong_TuVan.Areas.Admin.Controllers
                 return RedirectToAction("Index", "Home");
             }
 
-            var resident = await _context.ApplicationResidents
+            var resident = await _context.ApplicationResident
                 .FirstOrDefaultAsync(r => r.UserName == User.Identity.Name);
             if (resident == null)
             {

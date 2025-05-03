@@ -1,0 +1,41 @@
+﻿@model IEnumerable<QuanLyTruyenThong_TuVan.Models.ForumPost>
+@{
+    ViewData["Title"] = "Diễn đàn";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success">@TempData["Success"]</div>
+}
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Đăng bài mới</a>
+</p>
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Chủ đề</th>
+            <th>Người đăng</th>
+            <th>Nội dung</th>
+            <th>Ngày tạo</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var p in Model)
+        {
+            <tr>
+                <td>@p.TypeTopic.ToString().Replace('_', ' ')</td>
+                <td>@p.Resident.FullName</td>
+                <td>@(p.Content.Length > 50 ? p.Content.Substring(0, 50) + "…" : p.Content)</td>
+                <td>@p.CreatedAt.ToString("dd/MM/yyyy HH:mm")</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@p.Id" class="btn btn-sm btn-info">Xem</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
