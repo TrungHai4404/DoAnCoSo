@@ -1,0 +1,44 @@
+﻿@* File: Areas/Admin/Views/AdminComment/Index.cshtml *@
+@model IEnumerable<QuanLyTruyenThong_TuVan.Models.Comment>
+
+<h2>Quản lý Góp ý</h2>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+}
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+}
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Tiêu đề</th>
+            <th>Người gửi</th>
+            <th>Ngày gửi</th>
+            <th>Phản hồi</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Title</td>
+                <td>@item.ResidentName</td>
+                <td>@item.CreatedAt.ToString("dd/MM/yyyy HH:mm")</td>
+                <td>@item.Responses.Count()</td>
+                <td>
+                    <a asp-area="Admin"
+                       asp-controller="AdminComment"
+                       asp-action="Details"
+                       asp-route-id="@item.Id">
+                        Chi tiết
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
